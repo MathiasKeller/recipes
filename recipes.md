@@ -613,6 +613,7 @@ Bake: 20 min · Oven: 175 °C / 350 °F · Pan: Two 12-cup muffin pans, lined wi
 15. Switch off, then add the sifted powdered sugar, vanilla and salt. Start on speed 1 to avoid a sugar cloud, then work up to speed 3–4 for 1 minute, until light and fluffy, glossy and holding soft peaks.
 
 **Notes**
+- The ingredient quantities for the cream cheese frosting (icing) are missing from the source text — only a pinch of salt is given. Butter, cream cheese, vanilla and powdered sugar still need amounts.
 - Pumpkin pie spice is hard to find ready-mixed in Swiss supermarkets. To make it, mix 4 parts ground cinnamon (Zimt), 1 part ground ginger (Ingwer), 1 part ground nutmeg (Muskatnuss) and ½ part ground cloves (Nelken), plus ½ part ground allspice (Piment) if you like.
 - Swiss shortcut for pumpkin pie spice: Lebkuchengewürz or Magenbrotgewürz from the Migros or Coop baking aisle. They also contain star anise and cardamom, so the flavour is more like a European spiced biscuit. Imported pumpkin pie spice is sold at American Food Avenue, BritShop and larger Globus food halls.
 - American brown sugar is fine white sugar coated in molasses; Swiss Rohrzucker is coarse and dry and won't give the same texture. For a close match, rub 200 g Feinkristallzucker with 1 tbsp (≈ 15 g) dark molasses or sugar beet syrup (Goldsaft / Zuckerrübensirup, near the jams at Coop and Migros) until fully blended.
