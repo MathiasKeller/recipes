@@ -321,6 +321,78 @@ Oven: 205 °C / 400 °F · Pan: Sheet pan
 3. Add the chicken and broccoli to the sheet pan and bake for another 25 minutes, or until the chicken reaches an internal temperature of 75 °C / 165 °F.
 4. For the sauce, stir all the sauce ingredients together in a small bowl until well combined.
 
+## White Miso Pork Chop Ramen — With jammy eggs and narutomaki
+Source: Custom recipe  
+*Copied from text you supplied.*  
+Serves: 6
+
+**Ingredients — White miso tare**
+- **150 g** white miso — *shiro miso*
+- **2½ tbsp** (38 g) tahini or sesame paste
+- **1½ tbsp** (22 ml) soy sauce — *shoyu*
+- **1½ tbsp** (22 ml) mirin
+- **1 tbsp** (15 ml) sake
+- **1 tbsp** (15 ml) toasted sesame oil, or walnut oil or butter
+- **3–4 cloves** garlic, finely minced
+- **2 tsp** (10 ml) ginger, grated
+- **⅜ tsp** (1.9 ml) ground white pepper
+
+**Ingredients — Pan-glazed pork chops**
+- **6 (1.5–2 lb)** (6 (700–900 g)) boneless pork chops
+- Salt and pepper
+- **1 tbsp** (15 ml) oil, for searing
+- **¼ cup** (60 ml) soy sauce
+- **2 tbsp** (30 ml) mirin
+- **1 tbsp** (15 ml) sake, or water
+- **1 tbsp** (15 ml (≈ 13 g)) sugar
+- **1 clove** garlic, smashed
+- **1 slice** ginger
+
+**Ingredients — Soft-boiled eggs**
+- **6–12 large** eggs, straight from the fridge; 1 or 2 per serving
+- **½ cup** (120 ml) soy sauce, optional marinade
+- **½ cup** (120 ml) water, optional marinade
+- **1 tbsp** (15 ml (≈ 13 g)) sugar, optional marinade
+
+**Ingredients — Broth and noodles**
+- **9 cups** (2.1 l) chicken, pork or dashi stock, 1.5 cups per bowl
+- **6 portions (~120 g each)** fresh ramen noodles
+
+**Ingredients — Toppings**
+- **12–18 slices** narutomaki (fish cake roll), 2–3 per bowl
+- nori sheets or wakame, nori cut into rectangles; wakame rehydrated
+- scallions, thinly sliced
+- Optional extras: sweet corn, sautéed bean sprouts, a small knob of butter
+
+**Method — Jammy eggs (can be made hours ahead)**
+1. Bring a pot of water to a rolling boil and gently lower in the 6–12 cold eggs. Boil for 6 minutes 30 seconds.
+2. Move them straight into an ice bath for 10 minutes, then peel. Either serve plain or soak in the soy–water–sugar marinade for at least 2 hours.
+
+**Method — Narutomaki and toppings**
+3. Thaw the frozen narutomaki roll in cold tap water for 10–15 minutes, then cut it diagonally into thin slices, about 3 mm / ⅛ inch thick.
+4. If using wakame, rehydrate it in warm water. Slice the scallions.
+
+**Method — Miso tare**
+5. Warm the 15 ml / 1 tbsp sesame oil (or butter) in a saucepan over low heat and gently fry the garlic and ginger for 1–2 minutes.
+6. Add the 22 ml / 1½ tbsp mirin and 15 ml / 1 tbsp sake and simmer for 1 minute.
+7. Stir in the 150 g miso, 38 g / 2½ tbsp tahini, 22 ml / 1½ tbsp soy sauce and the white pepper. Whisk over low heat for 2 minutes until smooth and glossy, then take off the heat.
+
+**Method — Pork chops**
+8. Season the chops with salt and pepper and sear in 15 ml / 1 tbsp oil in a skillet over medium-high heat, 3–4 minutes per side, until golden.
+9. Turn the heat to low and add the 60 ml / ¼ cup soy sauce, 30 ml / 2 tbsp mirin, 15 ml / 1 tbsp sake, 15 ml / 1 tbsp sugar, smashed garlic and ginger slice.
+10. Simmer, basting the chops, for 2–3 minutes until glazed. Lift out the pork, rest it for 5 minutes, then slice thinly. Keep the pan sauce.
+
+**Method — Assembly**
+11. Bring the 2.1 l / 9 cups stock to a gentle simmer. Cook the noodles separately according to the packet.
+12. Put 30 ml / 2 tbsp miso tare and 15 ml / 1 tbsp of the reserved pork pan glaze into each of the 6 bowls.
+13. Pour 360 ml / 1½ cups hot stock into each bowl and whisk hard until smooth.
+14. Share out the noodles, then top each bowl with sliced pork, 1 or 2 halved eggs, narutomaki slices, nori or wakame, and scallions.
+
+**Notes**
+- The eggs can be cooked hours in advance.
+- Save the sweet-savoury pan sauce from the pork; it goes into the bowls with the tare.
+- Toasted sesame oil in the tare can be swapped for walnut oil or butter.
+
 ---
 
 # Desserts
