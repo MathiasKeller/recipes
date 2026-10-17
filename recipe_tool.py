@@ -77,8 +77,8 @@ def validate(recipes):
         if not isinstance(tags, list) or set(tags) - TAGS: errors.append(f"{w} tags must be a list drawn from {sorted(TAGS)}")
         if "lang" in r and r["lang"] not in LANGS: errors.append(f"{w} lang must be one of {sorted(LANGS)}")
         src = r.get("source")
-        if not isinstance(src, dict) or not src.get("name") or not str(src.get("url", "")).startswith("http"):
-            errors.append(f"{w} source needs a name and an http(s) url")
+        if not isinstance(src, dict) or not src.get("name") or ("url" in src and not str(src["url"]).startswith("http")):
+            errors.append(f"{w} source needs a name, and its url (optional) must be http(s)")
         facts = r.get("facts", [])
         if not isinstance(facts, list): errors.append(f"{w} facts must be a list")
         else:
@@ -151,7 +151,7 @@ def to_markdown(recipes):
         for r in group:
             out.append(f"## {r['title']}" + (f" — {r['sub']}" if r.get("sub") else ""))
             src = r["source"]
-            out.append(f"Source: {src['url']} ({src['name']})  ")
+            out.append(f"Source: {src['url']} ({src['name']})  " if src.get("url") else f"Source: {src['name']}  ")
             if src.get("note"): out.append(f"*{src['note']}*  ")
             if r.get("facts"):
                 out.append(" · ".join(f"{k}: {pairs(v)}" for k, v in r["facts"]))

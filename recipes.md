@@ -294,6 +294,33 @@ Serves: 4 · Prep: 10 min · Cook: 20 min
 - The author adds pine nuts and a little passata for extra creaminess.
 - Whole olives look nicer; if they aren't pitted, warn your guests.
 
+## Lazy Sheet Pan Dinner — With creamy hot honey mustard sauce
+Source: Instagram  
+*Copied from text you supplied (transcribed from an image).*  
+Oven: 205 °C / 400 °F · Pan: Sheet pan
+
+**Ingredients — Sheet pan**
+- **2** sweet potatoes
+- **2** chicken breasts
+- **1 head** broccoli, cut into florets
+- Olive oil, salt, pepper, onion powder and paprika, no quantities given
+
+**Ingredients — Creamy hot honey mustard sauce**
+- **¼ cup** (60 ml) Greek yogurt
+- **1 tbsp** (15 ml) Dijon mustard
+- **2 tbsp** (30 ml) yellow mustard
+- **1 tbsp** (15 ml) hot honey
+- **½** lemon, juiced
+- **½ tsp** (2.5 ml) garlic powder
+- **½ tsp** (2.5 ml) paprika
+- Salt, pepper and hot sauce, to taste
+
+**Method**
+1. Roast the sweet potatoes at 205 °C / 400 °F for 30–40 minutes, depending on their size.
+2. Toss the chicken breasts and broccoli florets with olive oil, salt, pepper, onion powder and paprika.
+3. Add the chicken and broccoli to the sheet pan and bake for another 25 minutes, or until the chicken reaches an internal temperature of 75 °C / 165 °F.
+4. For the sauce, stir all the sauce ingredients together in a small bowl until well combined.
+
 ---
 
 # Desserts

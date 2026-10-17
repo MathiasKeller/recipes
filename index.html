@@ -1198,6 +1198,109 @@ a{color:var(--link);text-underline-offset:.18em}
   ]
  },
  {
+  "id": "lazy-sheet-pan-dinner",
+  "title": "Lazy Sheet Pan Dinner",
+  "sub": "With creamy hot honey mustard sauce",
+  "course": "mains",
+  "tags": [
+   "meat"
+  ],
+  "source": {
+   "name": "Instagram",
+   "note": "Copied from text you supplied (transcribed from an image)."
+  },
+  "facts": [
+   [
+    "Oven",
+    "{205 °C|400 °F}"
+   ],
+   [
+    "Pan",
+    "Sheet pan"
+   ]
+  ],
+  "ingredients": [
+   {
+    "group": "Sheet pan",
+    "items": [
+     {
+      "m": "2",
+      "n": "sweet potatoes"
+     },
+     {
+      "m": "2",
+      "n": "chicken breasts"
+     },
+     {
+      "m": "1 head",
+      "n": "broccoli",
+      "x": "cut into florets"
+     },
+     {
+      "m": "",
+      "n": "Olive oil, salt, pepper, onion powder and paprika",
+      "x": "no quantities given"
+     }
+    ]
+   },
+   {
+    "group": "Creamy hot honey mustard sauce",
+    "items": [
+     {
+      "m": "60 ml",
+      "o": "¼ cup",
+      "n": "Greek yogurt"
+     },
+     {
+      "m": "15 ml",
+      "o": "1 tbsp",
+      "n": "Dijon mustard"
+     },
+     {
+      "m": "30 ml",
+      "o": "2 tbsp",
+      "n": "yellow mustard"
+     },
+     {
+      "m": "15 ml",
+      "o": "1 tbsp",
+      "n": "hot honey"
+     },
+     {
+      "m": "½",
+      "n": "lemon",
+      "x": "juiced"
+     },
+     {
+      "m": "2.5 ml",
+      "o": "½ tsp",
+      "n": "garlic powder"
+     },
+     {
+      "m": "2.5 ml",
+      "o": "½ tsp",
+      "n": "paprika"
+     },
+     {
+      "m": "",
+      "n": "Salt, pepper and hot sauce",
+      "x": "to taste"
+     }
+    ]
+   }
+  ],
+  "method": [
+   {
+    "steps": [
+     "Roast the sweet potatoes at {205 °C|400 °F} for 30–40 minutes, depending on their size.",
+     "Toss the chicken breasts and broccoli florets with olive oil, salt, pepper, onion powder and paprika.",
+     "Add the chicken and broccoli to the sheet pan and bake for another 25 minutes, or until the chicken reaches an internal temperature of {75 °C|165 °F}.",
+     "For the sauce, stir all the sauce ingredients together in a small bowl until well combined."
+    ]
+   }
+  ]
+ },
+ {
   "id": "key-lime-pie",
   "title": "Classic Key Lime Pie",
   "course": "desserts",
@@ -2256,7 +2359,7 @@ function renderRecipe(r){
         <h1 id="rTitle">${esc(r.title)}</h1>
         ${r.sub ? `<p class="sub">${esc(r.sub)}</p>` : ""}
         <ul class="r-facts">${r.facts.map(([k, v]) => `<li><span class="k">${esc(k)}</span><span class="v">${fmt(v)}</span></li>`).join("")}</ul>
-        <p class="r-source">Source: <a href="${esc(r.source.url)}" target="_blank" rel="noopener">${esc(r.source.name)}</a>${r.source.note ? `<span class="note">${esc(r.source.note)}</span>` : ""}</p>
+        <p class="r-source">Source: ${r.source.url ? `<a href="${esc(r.source.url)}" target="_blank" rel="noopener">${esc(r.source.name)}</a>` : esc(r.source.name)}${r.source.note ? `<span class="note">${esc(r.source.note)}</span>` : ""}</p>
       </header>
     </div>
     <nav class="tabs" id="tabs" aria-label="Recipe sections">
