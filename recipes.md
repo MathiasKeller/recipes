@@ -563,3 +563,57 @@ Serves: 4 · Prep: 10 min · Cook: 10 min · Pan: 32 cm non-stick
 **Notes**
 - With a 26 or 28 cm pan, cook the batter in two or three portions, otherwise it's too thick to cook through in time.
 - Traditional accompaniments: apple sauce, Zwetschgenröster (plum compote), other fruit compotes, or vanilla sauce.
+
+## Pumpkin Cupcakes — With cream cheese frosting
+Source: Preppy Kitchen  
+*Copied from text you supplied. The frosting quantities weren't included.*  
+Bake: 20 min · Oven: 175 °C / 350 °F · Pan: Two 12-cup muffin pans, lined with paper cases
+
+**Ingredients — Cupcakes**
+- **2 cups** (240 g) all-purpose flour
+- **½ cup** (100 g) granulated sugar
+- **1 cup** (220 g) light brown sugar, packed
+- **2 tsp** (10 ml) baking powder
+- **1 tsp** (5 ml) baking soda
+- **¾ tsp** (3.75 ml) salt
+- **2 tsp** (10 ml) pumpkin pie spice, see notes for substitutes
+- **2 tsp** (10 ml) ground ginger
+- **1 tsp** (5 ml) ground cinnamon
+- **15 oz can** (425 g can) pumpkin purée
+- **1 cup** (240 ml) vegetable oil
+- **4 large** eggs
+- **1 tbsp** (15 ml) vanilla extract
+
+**Ingredients — Cream cheese frosting**
+- butter, softened; no quantity given
+- cream cheese, no quantity given
+- vanilla, no quantity given
+- **1 pinch** salt
+- powdered sugar, sifted; no quantity given
+
+**Method — Cupcakes**
+1. Heat the oven to 175 °C / 350 °F and line two 12-cup muffin pans with paper cases.
+2. In a large bowl, sift together the flour, granulated sugar, baking powder, baking soda, salt, pumpkin pie spice, ginger and cinnamon.
+3. In a second bowl, whisk the pumpkin purée, oil, brown sugar, eggs and vanilla.
+4. Pour the wet mixture into the dry ingredients and stir only until just combined.
+5. Divide the batter between the cases, filling each about three-quarters full (roughly 60 ml / ¼ cup each). Bake for 20 minutes, until a toothpick pushed into the centre comes out clean.
+6. Leave the cupcakes in the pans for 10 minutes, then move them to a wire rack to cool completely.
+
+**Method — Cream cheese frosting**
+7. In a stand mixer, beat the butter on medium speed until creamy, then add the cream cheese and beat until smooth.
+8. Mix in the vanilla and a pinch of salt. With the mixer on low, add the powdered sugar gradually until incorporated.
+9. Turn the speed up to medium and beat for about 1 minute, until light and fluffy.
+10. Pipe or spread the frosting onto the completely cooled cupcakes.
+
+**Method — Frosting with a Bosch MUM4 stand mixer**
+11. Press the release button and raise the swivel arm until it clicks into the horizontal overhead position and stays put.
+12. Push the shaft of the wire whisk up into the drive socket under the arm until it snaps in; tug gently to check it is locked.
+13. Set the bowl on the base, line up the notches and turn it to lock. Lower the arm until it clicks shut; the whisk should sit in the centre without scraping the sides.
+14. Add the softened butter and cream cheese, and beat on speed 2–3 for 1–2 minutes, until completely smooth and lump-free.
+15. Switch off, then add the sifted powdered sugar, vanilla and salt. Start on speed 1 to avoid a sugar cloud, then work up to speed 3–4 for 1 minute, until light and fluffy, glossy and holding soft peaks.
+
+**Notes**
+- Pumpkin pie spice is hard to find ready-mixed in Swiss supermarkets. To make it, mix 4 parts ground cinnamon (Zimt), 1 part ground ginger (Ingwer), 1 part ground nutmeg (Muskatnuss) and ½ part ground cloves (Nelken), plus ½ part ground allspice (Piment) if you like.
+- Swiss shortcut for pumpkin pie spice: Lebkuchengewürz or Magenbrotgewürz from the Migros or Coop baking aisle. They also contain star anise and cardamom, so the flavour is more like a European spiced biscuit. Imported pumpkin pie spice is sold at American Food Avenue, BritShop and larger Globus food halls.
+- American brown sugar is fine white sugar coated in molasses; Swiss Rohrzucker is coarse and dry and won't give the same texture. For a close match, rub 200 g Feinkristallzucker with 1 tbsp (≈ 15 g) dark molasses or sugar beet syrup (Goldsaft / Zuckerrübensirup, near the jams at Coop and Migros) until fully blended.
+- Other brown sugar options: Vergeoise blonde or brune (larger Coop stores, French-speaking Switzerland), light muscovado (Coop Megastores, Manor Food, Alnatura, Claro), Coop Naturaplan Jacutinga sugar, or imported Domino or Tate & Lyle brown sugar from Globus, Manor or American Food Avenue.
