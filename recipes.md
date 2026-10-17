@@ -166,6 +166,69 @@ Makes: 20 buns · Prep: 3 hrs · Cook: 20 min
 - Boiling water must never touch the buns. Oil the steamer sides and use a porous surface, not a plate.
 - Reheat refrigerated buns for 1–2 minutes in the microwave or 5 minutes in the steamer. Steam frozen buns for 8 minutes without thawing.
 
+## Stuffed Grape Leaves — Warak enab (dolmades)
+Source: https://amiraspantry.com/stuffed-grape-leaves-dolmades/ (Amira's Pantry, Amira)  
+Makes: 60 · Prep: 1 hr · Cook: 1 hr 20 min · Total: 2 hr 20 min · Equipment: 4-quart (≈ 3.8 l) deep pot, colander, flat plate to weigh the leaves down
+
+**Ingredients — Filling**
+- **2 cups** (480 ml (≈ 400 g)) short-grain rice
+- **1 medium** yellow onion, chopped
+- **¼ cup** (60 ml) olive oil, divided; 1 tbsp of it is for blanching the leaves
+- **3 tbsp** (45 ml) tomato paste
+- **15 oz can** (425 g can) tomato sauce
+- **1 cup** (240 ml) parsley, chopped
+- **½ cup** (120 ml) fresh cilantro, chopped
+- **⅓ cup** (80 ml) dill, chopped
+- **1 tbsp** (15 ml) dried mint
+- **½ tsp** (2.5 ml) ground black pepper
+- **½ tsp** (2.5 ml) salt, or to taste
+- **½ lb** (225 g) preserved grape leaves, about half a jar
+
+**Ingredients — Cooking liquid**
+- **2½ cups** (600 ml) vegetable stock or water, warm
+- **1** vegetable bouillon cube
+- **1½ tbsp** (22.5 ml) lemon juice
+- **1 tsp** (5 ml) tomato paste
+- **2 tbsp** (30 ml) olive oil, or ghee or butter
+
+**Ingredients — For the pot**
+- herb stems and grape leaf stems, kept from the prep
+- tomato or onion slices, no quantity given
+
+**Method — Soften the leaves**
+1. Give the grape leaves a quick rinse in cold water. Bring about 1.5 l water with 15 ml / 1 tbsp of the olive oil to the boil over medium-high heat.
+2. Split the leaves into 4 batches and boil each batch for 3–4 minutes, draining it in a colander before adding the next.
+3. Leave the leaves to cool until you can handle them comfortably.
+
+**Method — Filling**
+4. Heat the rest of the olive oil in a large pot over medium-high heat and fry the onion until translucent. Stir in the tomato sauce and tomato paste.
+5. Add the rice, spices and herbs and cook for just 2 minutes. Turn off the heat and let the filling cool.
+
+**Method — Roll**
+6. Cut the stems off the cooled leaves and keep them.
+7. Lay a leaf smooth side down on a board and put about 7.5 ml / 1½ tsp filling at the wide end.
+8. Fold in both sides and roll up snugly. Repeat with the remaining leaves and filling.
+
+**Method — Cook**
+9. Cover the bottom of a 3.8 l / 4-quart deep pot with the herb stems, tomato or onion slices and the grape leaf stems.
+10. Pack the rolled leaves in tight rows on top, leaving no gaps.
+11. Warm the stock in the microwave for 30 seconds, then stir in the tomato paste and lemon juice and dissolve the bouillon cube.
+12. Pour the liquid over the leaves and set the pot over medium-high heat.
+13. As soon as the liquid bubbles at the edges, lower the heat and lay a flat plate on top of the leaves.
+14. Cover and simmer on low for 75–90 minutes until fully cooked, checking for doneness after 1 hour.
+15. When done, heat the 30 ml / 2 tbsp olive oil until very hot, pour it over the leaves, cover and leave to rest for 10 minutes.
+
+**Notes**
+- Jarred leaves are tougher than fresh ones, so they need softening in boiling water first.
+- Keep the herb stems and grape leaf stems: on the bottom of the pot they add flavour and tartness, and the tomato or onion slices stop the leaves scorching.
+- Some cooks add up to 60 ml / ¼ cup lemon juice to the cooking liquid, to taste.
+- Dried mint works better than fresh here.
+- The plate on top keeps the rolls firm and in place while they cook. The hot oil poured over at the end soaks in and makes them more tender.
+- Storage: keeps 5–6 days in an airtight container in the fridge. Reheat in the microwave or in a pot over medium-low heat with a splash of water.
+- Make ahead: the filling keeps up to 3 days and rolled leaves up to 2 days. Freezing isn't recommended, as the rice tends to break.
+- Traditionally served with tzatziki or tabouli; some serve them as a meal with lamb chops.
+- Variations: add ground lamb or beef to the filling, or leave out or adjust the herbs.
+
 ---
 
 # Mains
