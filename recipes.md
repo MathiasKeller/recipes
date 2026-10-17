@@ -393,6 +393,41 @@ Serves: 6
 - Save the sweet-savoury pan sauce from the pork; it goes into the bowls with the tare.
 - Toasted sesame oil in the tare can be swapped for walnut oil or butter.
 
+## Beefy Nachos — Taco meat and toppings
+Source: https://youtu.be/VTymqMhCwnk (Cooking Con Claudia (YouTube))  
+*Your own slight variation of the recipe in this video, copied from text you supplied.*  
+Total: Under 15 min
+
+**Ingredients — Seasoned taco meat**
+- **1 tbsp** (15 ml) cooking oil
+- **½ medium (≈ 75 g)** onion, diced
+- **1 (≈ 100 g)** Roma tomato, diced
+- **2 lb** (900 g) ground beef
+- **1½ tsp** (7.5 ml (9 g)) garlic salt
+- **1 tsp** (5 ml (2.5 g)) onion powder
+- **1 tsp** (5 ml (2.5 g)) ground cumin
+- **1 tsp** (5 ml (2.5 g)) chili powder
+- **1 tsp** (5 ml (2.5 g)) paprika
+- **1 tsp** (5 ml (1 g)) dried oregano
+- **1 tsp** (5 ml (2.5 g)) black pepper
+- **½ tsp** (2.5 ml (1 g)) cayenne pepper
+- **½ tsp** (2.5 ml (3 g)) salt, or to taste
+- **1 tbsp** (8 g) all-purpose flour
+- **¼ cup** (60 ml) water
+
+**Ingredients — Assembly and toppings**
+- **2 layers** tortilla chips, to taste
+- sour cream, to taste
+- pico de gallo, to taste
+- sliced jalapeños, to taste
+
+**Method**
+1. Heat the oil in a large pan over medium-high heat. When hot, add the onion and tomato and cook for 2 minutes, until softened.
+2. Add the beef along with the garlic salt, onion powder, cumin, chili powder, paprika, oregano, black pepper, cayenne and salt. Break the meat up as it cooks and brown it for about 7 minutes.
+3. Taste and add more salt if needed. Push the meat to one side so the fat collects in the middle of the pan, sprinkle the flour into the fat, then stir everything back together.
+4. Pour in the 60 ml / ¼ cup water, stir well and simmer for 2 minutes, until the liquid thickens and coats the meat. Take off the heat.
+5. Spread a layer of tortilla chips on a platter and spoon over half the meat. Add a second layer of chips and the rest of the meat, then top with sour cream, pico de gallo and jalapeños.
+
 ---
 
 # Desserts
