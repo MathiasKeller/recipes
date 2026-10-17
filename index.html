@@ -81,7 +81,12 @@ a{color:var(--link);text-underline-offset:.18em}
 .appbar .wrap{height:var(--bar-h);display:flex;align-items:center;gap:.5rem}
 .brand{display:flex;align-items:center;gap:.6rem;color:inherit;text-decoration:none;font-family:var(--display);font-weight:650;font-size:1.25rem;letter-spacing:-.01em;min-width:0}
 .brand svg{flex:none}
-.bar-title{flex:1;min-width:0;font-family:var(--display);font-weight:500;font-size:1.05rem;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;opacity:0;transition:opacity .2s}
+.appbar .spacer{display:block!important}
+:root{--title-h:0rem}
+:root.title-on{--title-h:1.75rem}
+.title-row{height:var(--title-h);overflow:hidden;transition:height .2s ease}
+.title-row .wrap{height:1.75rem;display:flex;align-items:flex-start}
+.bar-title{flex:1;min-width:0;padding:0 .2rem;font-family:var(--body);font-weight:700;font-size:.82rem;letter-spacing:.01em;line-height:1.5;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;color:var(--aqua);opacity:0;transition:opacity .2s}
 .bar-title.show{opacity:1}
 .spacer{flex:1}
 .icon-btn{display:inline-flex;align-items:center;justify-content:center;gap:.35rem;min-width:2.6rem;height:2.6rem;padding:0 .6rem;border:0;border-radius:999px;background:transparent;color:var(--on-deep);cursor:pointer;font-weight:700}
@@ -154,11 +159,11 @@ a{color:var(--link);text-underline-offset:.18em}
 .r-facts .v{font-weight:700}
 .r-source{margin:.9rem 0 0;font-size:.92rem;color:var(--muted)}
 .r-source .note{display:block;margin-top:.2rem;font-style:italic}
-.tabs{position:sticky;top:calc(var(--bar-h) + env(safe-area-inset-top));z-index:20;background:var(--bg);border-bottom:1px solid var(--line)}
+.tabs{position:sticky;top:calc(var(--bar-h) + var(--title-h) + env(safe-area-inset-top));z-index:20;background:var(--bg);border-bottom:1px solid var(--line)}
 .tabs .wrap{display:flex;gap:.25rem}
 .tab{flex:1;max-width:11rem;height:3.1rem;border:0;border-bottom:3px solid transparent;background:none;color:var(--muted);font-weight:700;cursor:pointer;font-size:1rem}
 .tab[aria-current="true"]{color:var(--ink);border-bottom-color:var(--teal)}
-.r-sec{padding-top:1.5rem;scroll-margin-top:calc(var(--bar-h) + 3.4rem + env(safe-area-inset-top))}
+.r-sec{padding-top:1.5rem;scroll-margin-top:calc(var(--bar-h) + 1.75rem + 3.4rem + env(safe-area-inset-top))}
 .r-sec > h2{font-family:var(--display);font-weight:650;font-size:1.5rem;margin:0 0 .25rem}
 .legend{display:flex;flex-wrap:wrap;gap:.25rem 1rem;font-size:.85rem;color:var(--muted);margin:0 0 .75rem}
 .legend b{color:var(--ink)}
@@ -231,7 +236,6 @@ a{color:var(--link);text-underline-offset:.18em}
       <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M15 5l-7 7 7 7"/></svg>
       <span>All</span>
     </a>
-    <div class="bar-title" id="barTitle" aria-hidden="true"></div>
     <div class="spacer" id="spacer"></div>
     <button class="icon-btn" id="wakeBtn" type="button" aria-pressed="false" hidden title="Keep the screen on while cooking">
       <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="6" y="2.5" width="12" height="19" rx="2.5"/><path d="M10.5 18.5h3"/></svg>
@@ -246,6 +250,7 @@ a{color:var(--link);text-underline-offset:.18em}
       <button class="icon-btn lg" id="sizeUp" type="button" aria-label="Larger text">A</button>
     </div>
   </div>
+  <div class="title-row" aria-hidden="true"><div class="wrap"><div class="bar-title" id="barTitle"></div></div></div>
 </header>
 
 <!-- ============ OVERVIEW ============ -->
@@ -2890,7 +2895,9 @@ function renderRecipe(r){
     secs.forEach((s, i) => { if (s.getBoundingClientRect().top <= line) cur = i; });
     if (window.innerHeight + window.scrollY >= document.documentElement.scrollHeight - 4) cur = secs.length - 1;
     tabs.forEach((t, i) => t.setAttribute("aria-current", String(i === cur)));
-    $("#barTitle").classList.toggle("show", titleEl.getBoundingClientRect().bottom < $(".appbar").offsetHeight);
+    const on = titleEl.getBoundingClientRect().bottom < $(".appbar").offsetHeight;
+    $("#barTitle").classList.toggle("show", on);
+    document.documentElement.classList.toggle("title-on", on);
   };
   window.addEventListener("scroll", secObserverHandler, {passive:true});
   secObserverHandler();
@@ -2932,7 +2939,7 @@ function route(){
     $("#brand").hidden = false;
     $("#back").hidden = true;
     $("#spacer").hidden = false;
-    $("#barTitle").classList.remove("show"); $("#barTitle").textContent = "";
+    $("#barTitle").classList.remove("show"); $("#barTitle").textContent = ""; document.documentElement.classList.remove("title-on");
     document.title = "Recipe Book";
     wake.active = false; wake.release();
     window.scrollTo(0, wasRecipe ? overviewScroll : 0);
