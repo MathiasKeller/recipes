@@ -491,6 +491,41 @@ Total: Under 15 min
 4. Pour in the 60 ml / ¼ cup water, stir well and simmer for 2 minutes, until the liquid thickens and coats the meat. Take off the heat.
 5. Spread a layer of tortilla chips on a platter and spoon over half the meat. Add a second layer of chips and the rest of the meat, then top with sour cream, pico de gallo and jalapeños.
 
+## Ginger Chicken with Shiitake & Greens — A lighter take on shōgayaki
+Source: Custom recipe  
+*Copied from text you supplied.*  
+Total: About 25 min
+
+**Ingredients — Sauce**
+- **2 tbsp** (30 ml) fresh ginger, finely grated
+- **1 clove** garlic, grated
+- **2 tbsp** (30 ml) soy sauce or tamari
+- **2 tbsp** (30 ml) sake, or dry white wine
+- **½ tsp** (2.5 ml) honey
+- **1 tsp** (5 ml) rice vinegar
+
+**Ingredients — Stir-fry**
+- **300 g** boneless chicken thighs, thinly sliced
+- **150 g** shiitake mushrooms, sliced
+- **2** pak choi, halved lengthwise
+- **1 tbsp** (15 ml) neutral oil
+
+**Ingredients — To finish**
+- **1 tsp** (5 ml) toasted sesame oil
+- **2** spring onions, sliced
+- **1 tsp** (5 ml) toasted sesame seeds
+
+**Method**
+1. Stir the ginger, garlic, soy sauce, sake, honey and rice vinegar together until the honey dissolves. Toss the chicken in half of this sauce and leave it for 10 minutes while you prep.
+2. Heat half the neutral oil (7.5 ml / ½ tbsp) in a large pan over high heat. Lay the pak choi in cut side down and cook for about 3 minutes, until charred. Set aside.
+3. Add the rest of the oil. Spread the chicken out in a single layer and sear without moving it, then turn and cook through, about 6 minutes in all. The honey helps it caramelise, so turn the heat down a little if it darkens too fast.
+4. Add the shiitake and stir-fry for about 3 minutes, until soft and browned.
+5. Pour in the remaining sauce and toss for about 1 minute, until it reduces to a glossy coating.
+6. Plate with the pak choi, drizzle with the sesame oil and scatter over the spring onions and sesame seeds.
+
+**Notes**
+- The 2.5 ml / ½ tsp honey adds only about 3 g of carbs to the whole dish. For a stickier glaze, use up to 5 ml / 1 tsp.
+
 ---
 
 # Desserts
