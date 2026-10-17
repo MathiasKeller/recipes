@@ -110,6 +110,8 @@ def validate(recipes):
                     errors.append(f"{w} method[{gi}] needs a non-empty steps list"); continue
                 for si, st in enumerate(g["steps"]):
                     check_text(f"{w} method[{gi}].steps[{si}]", st, errors)
+                if "alt" in g and not isinstance(g["alt"], bool):
+                    errors.append(f"{w} method[{gi}].alt must be true or false")
         for ni, n in enumerate(r.get("notes", []) or []):
             check_text(f"{w} notes[{ni}]", n, errors)
         if "quick" in tags:
@@ -169,6 +171,7 @@ def to_markdown(recipes):
                 out.append("")
             n = 0
             for g in r["method"]:
+                if g.get("alt"): n = 0
                 out.append(f"**Method — {g['group']}**" if g.get("group") else "**Method**")
                 for st in g["steps"]:
                     n += 1

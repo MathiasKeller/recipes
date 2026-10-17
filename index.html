@@ -2110,7 +2110,7 @@ a{color:var(--link);text-underline-offset:.18em}
   ],
   "method": [
    {
-    "group": "By hand or with a mixer",
+    "group": "Without a Thermomix",
     "steps": [
      "Weigh all the ingredients into a deep, wide bowl and beat until smooth. Have everything at room temperature and start with the cream cheese.",
      "Line an 18 cm high-sided mould with baking paper that has been wetted and crumpled, letting the excess hang over the sides.",
@@ -2127,7 +2127,8 @@ a{color:var(--link);text-underline-offset:.18em}
      "Bake for 40 minutes on the lower part of the oven, preheated to 200 °C with top and bottom heat. For a darker top, raise it to 220 °C.",
      "When it has set, open the oven door slightly and let it come to room temperature inside.",
      "Transfer to the fridge. Unmould, slice and serve once cold."
-    ]
+    ],
+    "alt": true
    }
   ],
   "notes": [
@@ -2533,7 +2534,8 @@ a{color:var(--link);text-underline-offset:.18em}
      "Set the bowl on the base, line up the notches and turn it to lock. Lower the arm until it clicks shut; the whisk should sit in the centre without scraping the sides.",
      "Add the softened butter and cream cheese, and beat on speed 2–3 for 1–2 minutes, until completely smooth and lump-free.",
      "Switch off, then add the sifted powdered sugar, vanilla and salt. Start on speed 1 to avoid a sugar cloud, then work up to speed 3–4 for 1 minute, until light and fluffy, glossy and holding soft peaks."
-    ]
+    ],
+    "alt": true
    }
   ],
   "notes": [
@@ -2907,7 +2909,11 @@ function renderRecipe(r){
 }
 function countStepsBefore(r, group){
   let n = 0;
-  for (const g of r.method){ if (g === group) break; n += g.steps.length; }
+  for (const g of r.method){
+    if (g.alt) n = 0;            // an alternative method restarts the numbering
+    if (g === group) break;
+    n += g.steps.length;
+  }
   return n;
 }
 

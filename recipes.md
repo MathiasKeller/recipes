@@ -550,7 +550,7 @@ Serves: 8 · Prep: 10 min · Bake: 40 min · Mould: 18 cm, at least 6 cm deep ·
 - **280 ml** whipping cream, minimum 35% fat — *nata líquida (mínimo 35% de grasa)*
 - **1 cucharada (tbsp)** (15 ml (≈ 8 g)) wheat flour — *harina de trigo*
 
-**Method — By hand or with a mixer**
+**Method — Without a Thermomix**
 1. Weigh all the ingredients into a deep, wide bowl and beat until smooth. Have everything at room temperature and start with the cream cheese.
 2. Line an 18 cm high-sided mould with baking paper that has been wetted and crumpled, letting the excess hang over the sides.
 3. Pour in the mixture and bake on the lower part of the oven, preheated to 200 °C with top and bottom heat, for 40 minutes.
@@ -558,11 +558,11 @@ Serves: 8 · Prep: 10 min · Bake: 40 min · Mould: 18 cm, at least 6 cm deep ·
 5. Refrigerate until serving, then unmould and slice.
 
 **Method — With a Thermomix**
-6. Put all the ingredients in the bowl and mix for 30 seconds at speed 5–6, using the blades (no butterfly).
-7. Line an 18–20 cm springform mould with wetted, crumpled baking paper, leaving the excess overhanging.
-8. Bake for 40 minutes on the lower part of the oven, preheated to 200 °C with top and bottom heat. For a darker top, raise it to 220 °C.
-9. When it has set, open the oven door slightly and let it come to room temperature inside.
-10. Transfer to the fridge. Unmould, slice and serve once cold.
+1. Put all the ingredients in the bowl and mix for 30 seconds at speed 5–6, using the blades (no butterfly).
+2. Line an 18–20 cm springform mould with wetted, crumpled baking paper, leaving the excess overhanging.
+3. Bake for 40 minutes on the lower part of the oven, preheated to 200 °C with top and bottom heat. For a darker top, raise it to 220 °C.
+4. When it has set, open the oven door slightly and let it come to room temperature inside.
+5. Transfer to the fridge. Unmould, slice and serve once cold.
 
 **Notes**
 - Use whipping cream (35% fat), not cooking cream.
@@ -678,11 +678,11 @@ Bake: 20 min · Oven: 175 °C / 350 °F · Pan: Two 12-cup muffin pans, lined wi
 10. Pipe or spread the frosting onto the completely cooled cupcakes.
 
 **Method — Frosting with a Bosch MUM4 stand mixer**
-11. Press the release button and raise the swivel arm until it clicks into the horizontal overhead position and stays put.
-12. Push the shaft of the wire whisk up into the drive socket under the arm until it snaps in; tug gently to check it is locked.
-13. Set the bowl on the base, line up the notches and turn it to lock. Lower the arm until it clicks shut; the whisk should sit in the centre without scraping the sides.
-14. Add the softened butter and cream cheese, and beat on speed 2–3 for 1–2 minutes, until completely smooth and lump-free.
-15. Switch off, then add the sifted powdered sugar, vanilla and salt. Start on speed 1 to avoid a sugar cloud, then work up to speed 3–4 for 1 minute, until light and fluffy, glossy and holding soft peaks.
+1. Press the release button and raise the swivel arm until it clicks into the horizontal overhead position and stays put.
+2. Push the shaft of the wire whisk up into the drive socket under the arm until it snaps in; tug gently to check it is locked.
+3. Set the bowl on the base, line up the notches and turn it to lock. Lower the arm until it clicks shut; the whisk should sit in the centre without scraping the sides.
+4. Add the softened butter and cream cheese, and beat on speed 2–3 for 1–2 minutes, until completely smooth and lump-free.
+5. Switch off, then add the sifted powdered sugar, vanilla and salt. Start on speed 1 to avoid a sugar cloud, then work up to speed 3–4 for 1 minute, until light and fluffy, glossy and holding soft peaks.
 
 **Notes**
 - The ingredient quantities for the cream cheese frosting (icing) are missing from the source text — only a pinch of salt is given. Butter, cream cheese, vanilla and powdered sugar still need amounts.
