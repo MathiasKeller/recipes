@@ -165,11 +165,6 @@ Makes: 20 buns · Prep: 3 hrs · Cook: 20 min
 - Keep your hands dry when sealing; any liquid makes the buns hard to close.
 - Boiling water must never touch the buns. Oil the steamer sides and use a porous surface, not a plate.
 - Reheat refrigerated buns for 1–2 minutes in the microwave or 5 minutes in the steamer. Steam frozen buns for 8 minutes without thawing.
-- Knowing when to stop adding water. You can’t see the water level under the steamer, so measure it once in advance. 
-Calibrate once, cold. Put the empty steamer in the wok. Pour in water from a measuring jug until it’s about 1.5 cm below the bottom of the bamboo. Note the amount, probably around 700 ml. That’s your “full” line.
-Each time you steam, fill to that amount.
-When topping up, only replace what has boiled off, about 250 ml per 10 minutes of steaming. Measure it in the jug, or use your kettle’s markings, then pour it down the side.
-So for a 15–18 minute batch of large buns, start with your measured full amount and add about 250 ml of boiling water at minute 8–10. Don’t add more than that.
 
 ---
 
@@ -270,6 +265,34 @@ Yield: 4 · Prep: 20 min · Cook: 6 min · Equipment: Instant-read thermometer
 - Cold-water lobster tails are preferred.
 - Save the shells for stock.
 - Optional additions to the butter: white wine, herbs, garlic, lemon, cream, chili flakes.
+
+## Spaghetti Puttanesca — Spaghetti alla puttanesca
+Source: https://www.ricettedalmondo.it/spaghetti-alla-puttanesca.html (RicetteDalMondo.it, Marianna Pascarella)  
+Serves: 4 · Prep: 10 min · Cook: 20 min
+
+**Ingredients**
+- **380 g** spaghetti — *spaghetti*
+- **4 tbsp** (60 ml) extra-virgin olive oil — *olio d'oliva extravergine*
+- **100 g** black olives, pitted — *olive nere*
+- **8** salted anchovy fillets — *filetti di acciughe sotto sale*
+- **1 clove** garlic, halved — *aglio*
+- **1 handful** salted capers, rinsed — *capperi sotto sale*
+- **400 g** chopped tomatoes, in large chunks — *pomodori a pezzettoni*
+- **100 g** tomato passata, optional — *passata di pomodoro*
+- **1 handful** pine nuts — *pinoli*
+- salt, to taste — *sale*
+- **1 pinch** fresh chilli — *peperoncino fresco*
+
+**Method**
+1. Warm the oil in a large frying pan with the rinsed capers, anchovies, a pinch of chilli, the pitted olives, the pine nuts and the halved garlic clove. Let it all infuse for a couple of minutes.
+2. Add the tomato chunks and the passata (optional), season with salt and simmer the sauce for about 15 minutes, adjusting the heat so it ends up slightly thickened.
+3. Meanwhile, cook the spaghetti in plenty of salted water. Drain them very al dente straight into the pan with the sauce and toss over moderate heat for a few minutes to absorb the flavour.
+4. Serve piping hot.
+
+**Notes**
+- The original Neapolitan version uses only olives and capers; the Roman version adds anchovies.
+- The author adds pine nuts and a little passata for extra creaminess.
+- Whole olives look nicer; if they aren't pitted, warn your guests.
 
 ---
 
