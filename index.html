@@ -167,16 +167,32 @@ a{color:var(--link);text-underline-offset:.18em}
 @media (prefers-color-scheme:dark){:root:not([data-theme="light"]) .grp{color:var(--aqua)}}
 :root[data-theme="dark"] .grp{color:var(--aqua)}
 .ing{list-style:none;margin:0;padding:0}
-.ing li{display:grid;grid-template-columns:minmax(6.5rem,8.25rem) 1fr;gap:.9rem;padding:.7rem .5rem;border-bottom:1px solid var(--line);cursor:pointer;border-radius:4px;-webkit-tap-highlight-color:transparent}
-.ing li:hover{background:var(--surface)}
-.q{display:flex;flex-direction:column;line-height:1.3}
+.ing{display:flex;flex-direction:column;gap:.5rem}
+.ing li{display:flex;align-items:flex-start;gap:.8rem;padding:.75rem .85rem;border:1px solid var(--line);border-radius:var(--radius-m);background:var(--bg);cursor:pointer;-webkit-tap-highlight-color:transparent;transition:background .15s,border-color .15s}
+.ing li:hover{border-color:var(--lagoon)}
+.ing .box{flex:none;width:1.45rem;height:1.45rem;margin-top:.12rem;border:2px solid var(--teal);border-radius:6px;display:flex;align-items:center;justify-content:center;transition:background .15s}
+.ing .body{flex:1;min-width:0;line-height:1.45}
+.q{display:inline-flex;align-items:baseline;gap:.4rem;margin:0 .45rem .15rem 0;padding:.05rem .55rem;border-radius:var(--radius-s);background:var(--surface-2);line-height:1.5;vertical-align:baseline}
 .q .m{font-weight:700;font-variant-numeric:tabular-nums}
-.q .o{font-size:.85rem;color:var(--muted)}
-.ing .name{line-height:1.45}
+.q .o{font-size:.82rem;color:var(--muted);font-variant-numeric:tabular-nums}
 .ing .x{color:var(--muted)}
 .ing .l{display:block;font-size:.85rem;color:var(--muted);font-style:italic}
+.ing li.done{background:var(--surface);border-color:transparent}
+.ing li.done .box{background:var(--teal);border-color:var(--teal)}
+.ing li.done .box::after{content:"";width:.4rem;height:.75rem;border:solid #fff;border-width:0 3px 3px 0;transform:translateY(-1px) rotate(45deg)}
+.ing li.done .q{background:transparent}
 .ing li.done .m,.ing li.done .name{text-decoration:line-through;text-decoration-thickness:2px;color:var(--done)}
 .ing li.done .o,.ing li.done .x,.ing li.done .l{color:var(--done)}
+.e{font-style:normal;margin-right:.35em;font-family:"Apple Color Emoji","Segoe UI Emoji","Noto Color Emoji",sans-serif}
+.cnt{font-family:var(--body);font-size:.85rem;font-weight:700;color:var(--muted);background:var(--surface-2);padding:.1rem .55rem;border-radius:999px;vertical-align:middle;margin-left:.3rem}
+.card .tags{display:flex;flex-wrap:wrap;gap:.35rem;margin:.55rem 0 0;padding:0;list-style:none;font-size:.82rem}
+.card .tags li{padding:.05rem .55rem;border:1px solid var(--line);border-radius:999px;color:var(--muted)}
+.course-head h2 .e{margin-right:.3em}
+.r-course .e,.jump .e,.fchip .e{margin-right:0}
+.tab{white-space:nowrap;max-width:none}
+.tab .e{margin-right:.3em}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]) .ing .box{border-color:var(--lagoon)}}
+:root[data-theme="dark"] .ing .box{border-color:var(--lagoon)}
 .steps{list-style:none;margin:0;padding:0;counter-reset:s}
 .steps li{position:relative;padding:.85rem .5rem .85rem 3.1rem;border-bottom:1px solid var(--line);counter-increment:s;cursor:pointer;border-radius:4px;max-width:42rem;-webkit-tap-highlight-color:transparent}
 .steps li:hover{background:var(--surface)}
@@ -2532,16 +2548,16 @@ a{color:var(--link);text-underline-offset:.18em}
    Edit them with recipe_tool.py; see PROJECT_INSTRUCTIONS.md for the format.
 ------------------------------------------------------------------- */
 const COURSES = [
-  {id:"breakfast", label:"Breakfast"},
-  {id:"starters",  label:"Starters"},
-  {id:"mains",     label:"Mains"},
-  {id:"desserts",  label:"Desserts"}
+  {id:"breakfast", label:"Breakfast", e:"🍳"},
+  {id:"starters",  label:"Starters",  e:"🥟"},
+  {id:"mains",     label:"Mains",     e:"🍲"},
+  {id:"desserts",  label:"Desserts",  e:"🍰"}
 ];
 const TAGS = [
-  {id:"veg",     label:"Vegetarian"},
-  {id:"meat",    label:"Meat"},
-  {id:"seafood", label:"Seafood"},
-  {id:"quick",   label:"30 min or less"}
+  {id:"veg",     label:"Vegetarian",     e:"🥦"},
+  {id:"meat",    label:"Meat",           e:"🥩"},
+  {id:"seafood", label:"Seafood",        e:"🐟"},
+  {id:"quick",   label:"30 min or less", e:"⚡"}
 ];
 const RECIPES = JSON.parse(document.getElementById("recipe-data").textContent);
 
@@ -2552,6 +2568,10 @@ const $ = s => document.querySelector(s);
 const esc = s => String(s).replace(/[&<>"']/g, c => ({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c]));
 const fmt = s => esc(s).replace(/\{([^|}]+)\|([^}]+)\}/g, (_, m, o) => `${m} <span class="orig">/ ${o}</span>`);
 const plain = s => String(s).replace(/\{([^|}]+)\|([^}]+)\}/g, "$1");
+const FACT_E = {Serves:"🍽️",Makes:"🍽️",Yield:"🍽️",Prep:"🔪",Cook:"🔥",Bake:"♨️",Total:"⏱️",Pan:"🍳",Mould:"🧁",Oven:"🌡️",Equipment:"🥣"};
+const em = e => `<span class="e" aria-hidden="true">${e}</span>`;
+const countIng = r => r.ingredients.reduce((a, g) => a + g.items.length, 0);
+const countSteps = r => r.method.reduce((a, g) => a + g.steps.length, 0);
 const courseOf = id => COURSES.find(c => c.id === id);
 const store = {
   get(k, d){ try{ const v = localStorage.getItem(k); return v === null ? d : JSON.parse(v); }catch(e){ return d; } },
@@ -2686,7 +2706,7 @@ function buildFilters(){
   const f = $("#filters");
   f.innerHTML = `<span class="lbl" id="flbl">Show only</span>` + TAGS.map(t =>
     `<button class="fchip" type="button" data-tag="${t.id}" aria-pressed="${state.tags.has(t.id)}">
-      <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12.5l4.5 4.5L19 7"/></svg>${t.label}</button>`
+      <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12.5l4.5 4.5L19 7"/></svg>${em(t.e)}${t.label}</button>`
   ).join("") + `<button class="reset" type="button" id="resetF" hidden>Clear filters</button>`;
   f.querySelectorAll(".fchip").forEach(b => b.addEventListener("click", () => {
     const t = b.dataset.tag;
@@ -2736,7 +2756,7 @@ function renderList(){
   // jump chips
   $("#jumps").innerHTML = groups.map(g =>
     `<button class="jump" type="button" data-course="${g.c.id}" style="--c:var(--c-${g.c.id})" ${g.items.length ? "" : "disabled"}>
-      <span class="dot" aria-hidden="true"></span>${g.c.label} <span class="n">${g.items.length}</span></button>`).join("");
+      ${em(g.c.e)}${g.c.label} <span class="n">${g.items.length}</span></button>`).join("");
   $("#jumps").querySelectorAll(".jump").forEach(b => b.addEventListener("click", () => {
     const sec = document.getElementById("c-" + b.dataset.course);
     if (sec) scrollToEl(sec, [$(".appbar"), $("#findbar")]);
@@ -2749,17 +2769,19 @@ function renderList(){
   }
   list.innerHTML = groups.filter(g => g.items.length).map(g => `
     <section class="course" id="c-${g.c.id}" style="--c:var(--c-${g.c.id})" aria-labelledby="h-${g.c.id}">
-      <div class="course-head"><h2 id="h-${g.c.id}">${g.c.label}</h2><span class="n">${g.items.length} ${g.items.length === 1 ? "recipe" : "recipes"}</span></div>
+      <div class="course-head"><h2 id="h-${g.c.id}">${em(g.c.e)}${g.c.label}</h2><span class="n">${g.items.length} ${g.items.length === 1 ? "recipe" : "recipes"}</span></div>
       <ul class="cards">${g.items.map(({r, m}) => {
         const facts = [];
-        if (r.cuisine) facts.push(esc(r.cuisine));
-        const t = timeLabel(r); if (t) facts.push(esc(t));
-        const y = r.facts.find(f => /^(Serves|Makes|Yield)$/.test(f[0])); if (y) facts.push(esc(y[0] + " " + y[1]));
-        r.tags.filter(x => x !== "quick").forEach(x => facts.push(TAGS.find(T => T.id === x).label));
+        const t = timeLabel(r); if (t) facts.push(em("⏱️") + esc(t));
+        const y = r.facts.find(f => /^(Serves|Makes|Yield)$/.test(f[0])); if (y) facts.push(em("🍽️") + esc(y[0] + " " + y[1]));
+        facts.push(em("🥕") + countIng(r) + " ingredients");
+        const tags = r.tags.filter(x => x !== "quick").map(x => { const T = TAGS.find(T => T.id === x); return em(T.e) + T.label; });
+        if (r.cuisine) tags.unshift(em("🌍") + esc(r.cuisine));
         return `<li><a class="card" href="#/r/${r.id}" style="--c:var(--c-${r.course})">
           <h3>${highlight(r.title, state.q)}</h3>
           ${r.sub ? `<p class="sub">${highlight(r.sub, state.q)}</p>` : ""}
           <ul class="facts">${facts.map(f => `<li>${f}</li>`).join("")}</ul>
+          <ul class="tags">${tags.map(f => `<li>${f}</li>`).join("")}</ul>
           ${m.hit ? `<p class="hit">Contains ${highlight(m.hit, state.q)}</p>` : ""}
         </a></li>`;
       }).join("")}</ul>
@@ -2784,8 +2806,8 @@ function ingredientRow(i, lang){
     ? (i.o
         ? `<span class="q"><span class="m">${esc(i.o)}</span><span class="o">${esc(i.m || "")}</span></span>`
         : `<span class="q"><span class="m">${esc(i.m || "")}</span></span>`)
-    : `<span class="q" aria-hidden="true"></span>`;
-  return `<li role="checkbox" aria-checked="false" tabindex="0">${q}<span class="name">${esc(i.n)}${i.x ? `<span class="x">, ${esc(i.x)}</span>` : ""}${i.l ? `<span class="l" lang="${lang}">${esc(i.l)}</span>` : ""}</span></li>`;
+    : "";
+  return `<li role="checkbox" aria-checked="false" tabindex="0"><span class="box" aria-hidden="true"></span><span class="body">${q}<span class="name">${esc(i.n)}${i.x ? `<span class="x">, ${esc(i.x)}</span>` : ""}</span>${i.l ? `<span class="l" lang="${lang}">${esc(i.l)}</span>` : ""}</span></li>`;
 }
 
 function renderRecipe(r){
@@ -2808,29 +2830,29 @@ function renderRecipe(r){
   el.innerHTML = `
     <div class="wrap narrow">
       <header class="r-head">
-        <p class="r-course"><span class="dot" aria-hidden="true"></span>${c.label}${r.cuisine ? `, ${esc(r.cuisine)}` : ""}</p>
+        <p class="r-course">${em(c.e)}${c.label}${r.cuisine ? `, ${esc(r.cuisine)}` : ""}</p>
         <h1 id="rTitle">${esc(r.title)}</h1>
         ${r.sub ? `<p class="sub">${esc(r.sub)}</p>` : ""}
-        <ul class="r-facts">${r.facts.map(([k, v]) => `<li><span class="k">${esc(k)}</span><span class="v">${fmt(v)}</span></li>`).join("")}</ul>
+        <ul class="r-facts">${r.facts.map(([k, v]) => `<li><span class="k">${FACT_E[k] ? em(FACT_E[k]) : ""}${esc(k)}</span><span class="v">${fmt(v)}</span></li>`).join("")}</ul>
         <p class="r-source">Source: ${r.source.url ? `<a href="${esc(r.source.url)}" target="_blank" rel="noopener">${esc(r.source.name)}</a>` : esc(r.source.name)}${r.source.note ? `<span class="note">${esc(r.source.note)}</span>` : ""}</p>
       </header>
     </div>
     <nav class="tabs" id="tabs" aria-label="Recipe sections">
       <div class="wrap narrow">
-        <button class="tab" type="button" data-target="sec-ing" aria-current="true">Ingredients</button>
-        <button class="tab" type="button" data-target="sec-method">Method</button>
-        ${hasNotes ? `<button class="tab" type="button" data-target="sec-notes">Notes</button>` : ""}
+        <button class="tab" type="button" data-target="sec-ing" aria-current="true">${em("🥕")}Ingredients</button>
+        <button class="tab" type="button" data-target="sec-method">${em("🔥")}Method</button>
+        ${hasNotes ? `<button class="tab" type="button" data-target="sec-notes">${em("💡")}Notes</button>` : ""}
       </div>
     </nav>
     <div class="wrap narrow">
       <section class="r-sec" id="sec-ing" aria-labelledby="h-ing">
-        <h2 id="h-ing">Ingredients</h2>
+        <h2 id="h-ing">Ingredients <span class="cnt">${countIng(r)}</span></h2>
         ${showOrig ? `<p class="legend"><span><b>Bold</b> original measurement</span><span>Grey: metric conversion</span></p>` : ""}
-        <p class="tip">Tap an ingredient to tick it off.</p>
+        <p class="tip">Tick ingredients off as you add them.</p>
         ${ing}
       </section>
       <section class="r-sec" id="sec-method" aria-labelledby="h-method">
-        <h2 id="h-method">Method</h2>
+        <h2 id="h-method">Method <span class="cnt">${countSteps(r)} steps</span></h2>
         <p class="tip">Tap a step to mark it done.</p>
         ${steps}
       </section>
