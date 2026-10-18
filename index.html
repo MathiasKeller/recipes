@@ -3092,7 +3092,7 @@ const fmtScore = n => String(n);
 const longDate = d => new Date(d + "T12:00:00").toLocaleDateString("en-GB", {day:"numeric", month:"short", year:"numeric"});
 function heroFig(p, r){
   return `<figure class="hero"><button type="button" class="ph" data-src="${p.src}" aria-label="Enlarge photo"><img src="${p.src}" alt="${esc(p.alt || "My " + r.title)}"></button>
-    <figcaption>${p.caption ? esc(p.caption) + " · " : ""}Made ${longDate(p.date)}</figcaption></figure>`;
+    ${p.caption ? `<figcaption>${esc(p.caption)}</figcaption>` : ""}</figure>`;
 }
 function moreFigs(r){
   if (!r.photos || r.photos.length < 2) return "";
