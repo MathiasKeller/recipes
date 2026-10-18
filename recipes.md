@@ -387,6 +387,8 @@ Oven: 205 °C / 400 °F · Pan: Sheet pan
 ## White Miso Pork Chop Ramen — With jammy eggs and narutomaki
 Source: Custom recipe  
 *Copied from text you supplied.*  
+My rating: ★ 9.5/10 (rated 2026-10-18) — “Incredibly tasty. Takes a moment to make, but so worth it.”  
+Photo: photos/white-miso-pork-chop-ramen-1.jpg (made 2026-10-18)  
 Serves: 6
 
 **Ingredients — White miso tare**
