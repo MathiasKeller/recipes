@@ -66,6 +66,7 @@ Serves: 1 egg · Prep: 5 min · Cook: 3 min · Equipment: Small fine-mesh sieve
 ## Socca — Chickpea flour pancake
 Source: https://cooking.nytimes.com/recipes/1014757-socca (NYT Cooking)  
 *Copied from the extract you supplied, because this page couldn't be fetched automatically.*  
+Photo: photos/socca-1.jpg (made 2026-10-18)  
 Pan: 30 cm / 12-inch cast-iron skillet · Oven: 230 °C / 450 °F
 
 **Ingredients**
@@ -86,6 +87,9 @@ Pan: 30 cm / 12-inch cast-iron skillet · Oven: 230 °C / 450 °F
 6. Pour in the batter and bake 12 to 15 minutes, until firm with set edges. The top may not be browned.
 7. Set the pan 5–8 cm / a few inches below the grill (broiler) for 1 to 2 minutes, just long enough to brown it in spots.
 8. Cut into wedges and serve hot with toppings of your choice.
+
+**Notes**
+- My experience: with fan heat (Heissluft) it took about 18 minutes in total, without moving the pan closer to the top grill.
 
 ## Seared Scallop Ceviche with Citrus
 Source: https://hellskitchenrecipes.com/dinner-party-appetizers-ramsay/ (Hell's Kitchen Recipes)  
