@@ -172,6 +172,28 @@ a{color:var(--link);text-underline-offset:.18em}
 .sc-val{min-width:3.4rem;text-align:center;font-weight:700;font-size:1.1rem;padding:.2rem .6rem;border-radius:var(--radius-s);background:var(--surface-2);font-variant-numeric:tabular-nums}
 .sc-reset{border:0;background:none;color:var(--link);text-decoration:underline;cursor:pointer;font-size:.9rem;padding:.3rem}
 .sc-note{font-size:.85rem;color:var(--teal);margin:0 0 .6rem}
+.star{color:#e0a000;margin-right:.3em}
+.rate-chip{display:inline-flex;align-items:baseline}
+.rate-chip b{font-weight:700}
+.rate-chip .of,.f-rate .of{color:var(--muted);font-weight:400}
+.card .facts li.is-rate{background:transparent;border:1px solid var(--line)}
+.card.has-thumb{position:relative;padding-right:7.6rem;min-height:7.8rem}
+.card .thumb{position:absolute;right:.75rem;top:.75rem;width:6.2rem;height:6.2rem;object-fit:cover;border-radius:var(--radius-m)}
+.hero{margin:.25rem -1rem 1.1rem}
+.hero .ph{display:block;width:100%;padding:0;border:0;background:none;cursor:zoom-in}
+.hero img{display:block;width:100%;aspect-ratio:4/3;object-fit:cover}
+@media (min-width:44rem){.hero{margin:1rem 0 1.2rem}.hero img{border-radius:var(--radius-m);aspect-ratio:16/9}}
+.hero figcaption{font-size:.82rem;color:var(--muted);padding:.4rem 1rem 0}
+.more-ph{display:flex;gap:.5rem;overflow-x:auto;margin:-.5rem 0 1rem;scrollbar-width:none}
+.more-ph::-webkit-scrollbar{display:none}
+.more-ph .ph{flex:none;padding:0;border:0;background:none;cursor:zoom-in}
+.more-ph img{display:block;width:4.5rem;height:4.5rem;object-fit:cover;border-radius:var(--radius-s)}
+.r-facts li.f-rate{background:var(--bg);border:1px solid var(--line)}
+.r-verdict{margin:.75rem 0 0;padding:.1rem 0 .1rem .85rem;border-left:3px solid var(--teal);font-style:italic;line-height:1.5}
+.r-verdict .d{display:block;font-style:normal;font-size:.82rem;color:var(--muted);margin-top:.15rem}
+.lb{position:fixed;inset:0;z-index:80;background:rgba(0,0,0,.88);display:flex;align-items:center;justify-content:center;padding:1rem}
+.lb img{max-width:100%;max-height:100%;border-radius:var(--radius-s)}
+.lb-x{position:absolute;top:calc(.75rem + env(safe-area-inset-top));right:.75rem;width:2.6rem;height:2.6rem;border:0;border-radius:999px;background:rgba(255,255,255,.18);color:#fff;font-size:1.1rem;cursor:pointer}
 .legend{display:flex;flex-wrap:wrap;gap:.25rem 1rem;font-size:.85rem;color:var(--muted);margin:0 0 .75rem}
 .legend b{color:var(--ink)}
 .tip{font-size:.85rem;color:var(--muted);margin:0 0 .75rem}
@@ -3054,6 +3076,17 @@ const FACT_E = {Serves:"🍽️",Makes:"🍽️",Yield:"🍽️",Prep:"🔪",Coo
 const em = e => `<span class="e" aria-hidden="true">${e}</span>`;
 const countIng = r => r.ingredients.reduce((a, g) => a + g.items.length, 0);
 const countSteps = r => r.method.reduce((a, g) => a + g.steps.length, 0);
+const STAR = `<span class="star" aria-hidden="true">★</span>`;
+const fmtScore = n => String(n);
+const longDate = d => new Date(d + "T12:00:00").toLocaleDateString("en-GB", {day:"numeric", month:"short", year:"numeric"});
+function heroFig(p, r){
+  return `<figure class="hero"><button type="button" class="ph" data-src="${p.src}" aria-label="Enlarge photo"><img src="${p.src}" alt="${esc(p.alt || "My " + r.title)}"></button>
+    <figcaption>${p.caption ? esc(p.caption) + " · " : ""}Made ${longDate(p.date)}</figcaption></figure>`;
+}
+function moreFigs(r){
+  if (!r.photos || r.photos.length < 2) return "";
+  return `<div class="more-ph">${r.photos.slice(1).map(p => `<button type="button" class="ph" data-src="${p.src}" aria-label="Enlarge photo${p.caption ? ": " + esc(p.caption) : ""}"><img src="${p.src}" alt="${esc(p.alt || p.caption || "Another photo of " + r.title)}" loading="lazy"></button>`).join("")}</div>`;
+}
 const courseOf = id => COURSES.find(c => c.id === id);
 const store = {
   get(k, d){ try{ const v = localStorage.getItem(k); return v === null ? d : JSON.parse(v); }catch(e){ return d; } },
@@ -3259,10 +3292,12 @@ function renderList(){
         facts.push(em("🥕") + countIng(r) + " ingredients");
         const tags = r.tags.filter(x => x !== "quick").map(x => { const T = TAGS.find(T => T.id === x); return em(T.e) + T.label; });
         if (r.cuisine) tags.unshift(em("🌍") + esc(r.cuisine));
-        return `<li><a class="card" href="#/r/${r.id}" style="--c:var(--c-${r.course})">
+        if (r.rating) facts.unshift(`<span class="rate-chip">${STAR}<b>${fmtScore(r.rating.score)}</b><span class="of">/10</span></span>`);
+        return `<li><a class="card${r.photos ? " has-thumb" : ""}" href="#/r/${r.id}" style="--c:var(--c-${r.course})">
+          ${r.photos ? `<img class="thumb" src="${r.photos[0].src}" alt="" loading="lazy">` : ""}
           <h3>${highlight(r.title, state.q)}</h3>
           ${r.sub ? `<p class="sub">${highlight(r.sub, state.q)}</p>` : ""}
-          <ul class="facts">${facts.map(f => `<li>${f}</li>`).join("")}</ul>
+          <ul class="facts">${facts.map(f => `<li${f.includes("rate-chip") ? ' class="is-rate"' : ""}>${f}</li>`).join("")}</ul>
           <ul class="tags">${tags.map(f => `<li>${f}</li>`).join("")}</ul>
           ${m.hit ? `<p class="hit">Contains ${highlight(m.hit, state.q)}</p>` : ""}
         </a></li>`;
@@ -3357,10 +3392,12 @@ function renderRecipe(r){
   el.innerHTML = `
     <div class="wrap narrow">
       <header class="r-head">
+        ${r.photos ? heroFig(r.photos[0], r) + moreFigs(r) : ""}
         <p class="r-course">${em(c.e)}${c.label}${r.cuisine ? `, ${esc(r.cuisine)}` : ""}</p>
         <h1 id="rTitle">${esc(r.title)}</h1>
         ${r.sub ? `<p class="sub">${esc(r.sub)}</p>` : ""}
-        <ul class="r-facts">${r.facts.map(([k, v]) => `<li><span class="k">${FACT_E[k] ? em(FACT_E[k]) : ""}${esc(k)}</span><span class="v"${/^(Serves|Makes|Yield)$/.test(k) ? ` data-raw="${esc(v)}"` : ""}>${fmt(v)}</span></li>`).join("")}</ul>
+        <ul class="r-facts">${r.rating ? `<li class="f-rate"><span class="k">${STAR}My rating</span><span class="v">${fmtScore(r.rating.score)}<span class="of"> / 10</span></span></li>` : ""}${r.facts.map(([k, v]) => `<li><span class="k">${FACT_E[k] ? em(FACT_E[k]) : ""}${esc(k)}</span><span class="v"${/^(Serves|Makes|Yield)$/.test(k) ? ` data-raw="${esc(v)}"` : ""}>${fmt(v)}</span></li>`).join("")}</ul>
+        ${r.rating ? `<p class="r-verdict">${r.rating.note ? `“${esc(r.rating.note)}”` : ""}<span class="d">${r.rating.note ? "— " : ""}Rated ${longDate(r.rating.date)}</span></p>` : ""}
         <p class="r-source">Source: ${r.source.url ? `<a href="${esc(r.source.url)}" target="_blank" rel="noopener">${esc(r.source.name)}</a>` : esc(r.source.name)}${r.source.note ? `<span class="note">${esc(r.source.note)}</span>` : ""}</p>
       </header>
     </div>
@@ -3415,6 +3452,8 @@ function renderRecipe(r){
   $("#scUp").addEventListener("click", () => { k = Math.min(10, k + 0.5); applyScale(); });
   $("#scReset").addEventListener("click", () => { k = 1; applyScale(); });
   applyScale();
+
+  el.querySelectorAll(".ph").forEach(b => b.addEventListener("click", () => { $("#lbImg").src = b.dataset.src; $("#lb").hidden = false; }));
 
   // tick off ingredients and steps
   el.querySelectorAll('[role="checkbox"]').forEach(li => {
@@ -3498,6 +3537,8 @@ window.addEventListener("hashchange", route);
 buildFilters();
 renderList();
 route();
+document.body.insertAdjacentHTML("beforeend", `<div class="lb" id="lb" hidden><img id="lbImg" alt=""><button type="button" class="lb-x" aria-label="Close">✕</button></div>`);
+$("#lb").addEventListener("click", () => { $("#lb").hidden = true; });
 </script>
 </body>
 </html>

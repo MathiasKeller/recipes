@@ -25,7 +25,10 @@ COURSES = [("breakfast", "Breakfast"), ("starters", "Starters"), ("mains", "Main
 COURSE_IDS = [c for c, _ in COURSES]
 TAGS = {"veg", "meat", "seafood", "quick"}
 LANGS = {"en", "es", "de", "fr", "it", "pt", "zh", "ja"}
-RECIPE_KEYS = {"id", "lang", "title", "sub", "course", "tags", "cuisine", "source", "facts", "ingredients", "method", "notes"}
+RECIPE_KEYS = {"id", "lang", "title", "sub", "course", "tags", "cuisine", "source", "facts", "ingredients", "method", "notes", "rating", "photos"}
+DATE_RE = re.compile(r"^\d{4}-\d{2}-\d{2}$")
+PHOTO_RE = re.compile(r"^photos/[a-z0-9]+(-[a-z0-9]+)*\.(jpg|jpeg|webp|png)$")
+HTML_DIR = Path(".")
 ITEM_KEYS = {"m", "o", "n", "x", "l"}
 DATA_RE = re.compile(r'(<script type="application/json" id="recipe-data">\n)(.*?)(\n</script>)', re.S)
 PAIR_RE = re.compile(r"\{([^|{}]+)\|([^{}]+)\}")
@@ -114,6 +117,33 @@ def validate(recipes):
                     errors.append(f"{w} method[{gi}].alt must be true or false")
         for ni, n in enumerate(r.get("notes", []) or []):
             check_text(f"{w} notes[{ni}]", n, errors)
+        if "rating" in r:
+            rt = r["rating"]
+            if not isinstance(rt, dict) or set(rt) - {"score", "date", "note"}:
+                errors.append(f"{w} rating must be an object with score, date and optional note")
+            else:
+                sc = rt.get("score")
+                if not isinstance(sc, (int, float)) or isinstance(sc, bool) or not 1 <= sc <= 10 or (sc * 2) % 1:
+                    errors.append(f"{w} rating.score must be 1 to 10 in steps of 0.5")
+                if not DATE_RE.match(str(rt.get("date", ""))):
+                    errors.append(f"{w} rating.date must be YYYY-MM-DD")
+                if "note" in rt and not str(rt["note"]).strip():
+                    errors.append(f"{w} rating.note must not be empty; leave it out instead")
+        if "photos" in r:
+            ph = r["photos"]
+            if not isinstance(ph, list) or not ph:
+                errors.append(f"{w} photos must be a non-empty list; leave it out instead")
+            else:
+                for pi, p in enumerate(ph):
+                    loc = f"{w} photos[{pi}]"
+                    if not isinstance(p, dict) or set(p) - {"src", "date", "caption", "alt"}:
+                        errors.append(f"{loc} must be an object with src, date and optional caption/alt"); continue
+                    if not PHOTO_RE.match(str(p.get("src", ""))):
+                        errors.append(f"{loc}.src must look like photos/<recipe-id>-1.jpg")
+                    elif not (HTML_DIR / p["src"]).is_file():
+                        warnings.append(f"{loc}.src {p['src']} not found next to index.html")
+                    if not DATE_RE.match(str(p.get("date", ""))):
+                        errors.append(f"{loc}.date must be YYYY-MM-DD")
         if "quick" in tags:
             mins = 0
             for k, v in (facts if isinstance(facts, list) else []):
@@ -155,6 +185,11 @@ def to_markdown(recipes):
             src = r["source"]
             out.append(f"Source: {src['url']} ({src['name']})  " if src.get("url") else f"Source: {src['name']}  ")
             if src.get("note"): out.append(f"*{src['note']}*  ")
+            if r.get("rating"):
+                rt = r["rating"]
+                out.append(f"My rating: ★ {rt['score']:g}/10 (rated {rt['date']})" + (f" — “{rt['note']}”" if rt.get("note") else "") + "  ")
+            for p in r.get("photos", []):
+                out.append(f"Photo: {p['src']} (made {p['date']})" + (f" — {p['caption']}" if p.get("caption") else "") + "  ")
             if r.get("facts"):
                 out.append(" · ".join(f"{k}: {pairs(v)}" for k, v in r["facts"]))
             out.append("")
@@ -208,6 +243,8 @@ def main():
     ap.add_argument("--html", default="index.html")
     ap.add_argument("--md", default="recipes.md")
     a = ap.parse_args()
+    global HTML_DIR
+    HTML_DIR = Path(a.html).resolve().parent
 
     text, recipes = load(a.html)
 
