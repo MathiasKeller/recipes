@@ -494,6 +494,8 @@ Total: Under 15 min
 ## Ginger Chicken with Shiitake & Greens — A lighter take on shōgayaki
 Source: Custom recipe  
 *Copied from text you supplied.*  
+My rating: ★ 7.5/10 (rated 2026-10-18) — “Healthy, fast and delicious, but not bursting at the seams with flavour.”  
+Photo: photos/ginger-chicken-shiitake-1.jpg (made 2026-10-18)  
 Serves: 2 · Total: About 25 min
 
 **Ingredients — Sauce**
