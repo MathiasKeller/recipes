@@ -66,6 +66,7 @@ Serves: 1 egg · Prep: 5 min · Cook: 3 min · Equipment: Small fine-mesh sieve
 ## Socca — Chickpea flour pancake
 Source: https://cooking.nytimes.com/recipes/1014757-socca (NYT Cooking)  
 *Copied from the extract you supplied, because this page couldn't be fetched automatically.*  
+My rating: ★ 7/10 (rated 2026-10-19) — “Tastes amazing, but the consistency isn't there yet: it was too dry. Friends suggested more oil in the batter and a longer rest.”  
 Photo: photos/socca-1.jpg (made 2026-10-18)  
 Pan: 30 cm / 12-inch cast-iron skillet · Oven: 230 °C / 450 °F
 
@@ -74,22 +75,24 @@ Pan: 30 cm / 12-inch cast-iron skillet · Oven: 230 °C / 450 °F
 - **½ tsp** (2.5 ml (≈ 3 g)) salt
 - **½ tsp** (2.5 ml) black pepper
 - **1 cup** (240 ml) warm water
-- **3 tbsp** (45 ml) olive oil, divided
+- **3–4 tbsp** (45–60 ml) olive oil, for the batter
+- **1 tbsp** (15 ml) olive oil, for the pan
 - **½** medium onion, sliced
 - **½ tbsp** (7.5 ml) fresh rosemary leaf, minced
 
 **Method**
 1. Put a heavy, preferably cast-iron, 30 cm / 12-inch skillet in the oven and preheat to 230 °C / 450 °F.
 2. Sift the chickpea flour, salt and pepper into a large bowl. Add the minced rosemary.
-3. Whisk in the warm water and 30 ml / 2 tbsp of the olive oil. Cover and rest at room temperature for at least 30 minutes, until it has the consistency of thick cream.
+3. Whisk in the warm water and the 45–60 ml / 3–4 tbsp olive oil for the batter. Cover and rest at room temperature for at least 45 minutes (up to 24 hours), until it has the consistency of thick cream.
 4. Stir the sliced onion into the batter.
-5. Take the hot skillet out of the oven, add the remaining 15 ml / 1 tbsp olive oil and swirl to coat.
+5. Take the hot skillet out of the oven, add the 15 ml / 1 tbsp olive oil for the pan and swirl to coat.
 6. Pour in the batter and bake 12 to 15 minutes, until firm with set edges. The top may not be browned.
 7. Set the pan 5–8 cm / a few inches below the grill (broiler) for 1 to 2 minutes, just long enough to brown it in spots.
 8. Cut into wedges and serve hot with toppings of your choice.
 
 **Notes**
 - My experience: with fan heat (Heissluft) it took about 18 minutes in total, without moving the pan closer to the top grill.
+- My adjustments: the original uses 30 ml / 2 tbsp oil in the batter and rests it for 30 minutes. That came out too dry, so on friends' advice the batter now gets 45–60 ml / 3–4 tbsp oil and rests for at least 45 minutes.
 
 ## Seared Scallop Ceviche with Citrus
 Source: https://hellskitchenrecipes.com/dinner-party-appetizers-ramsay/ (Hell's Kitchen Recipes)  
