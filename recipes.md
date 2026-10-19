@@ -537,6 +537,38 @@ Serves: 2 · Total: About 25 min
 **Notes**
 - The 2.5 ml / ½ tsp honey adds only about 3 g of carbs to the whole dish. For a stickier glaze, use up to 5 ml / 1 tsp.
 
+## Homemade Egg Pasta — Pasta fatta in casa
+Source: https://blog.giallozafferano.it/ricettepanedolci/pasta-fatta-in-casa/ (Rossella… Pane e Cioccolato (Giallozafferano blog), Rossella Maraio)  
+Serves: 6 · Prep: 30 min · Cook: 4 min · Equipment: Pasta board, fork, cling film, tea towel, pasta machine or rolling pin
+
+**Ingredients**
+- **500 g** re-milled durum wheat semolina — *semola rimacinata di grano duro*
+- **5** eggs, ideally organic, at room temperature — *uova*
+- **7 g** salt — *sale*
+- **2 cucchiai (tbsp)** (30 ml) water, only if the dough is too stiff — *acqua*
+- **20 ml** extra-virgin olive oil, optional — *olio extravergine d'oliva*
+
+**Method — Dough**
+1. Sift the semolina onto the board to remove lumps and aerate it.
+2. Make a well in the middle and add the eggs and salt, plus the olive oil if using.
+3. Beat with a fork, gradually drawing the semolina into the eggs until the mixture starts to hold together.
+4. Carry on by hand. If the dough feels too stiff, add the 30 ml / 2 tbsp water.
+5. Knead for 5–10 minutes into a smooth, elastic ball. Wrap in cling film and rest for 30 minutes at room temperature.
+
+**Method — Roll and cut**
+6. Roll the dough out with the pasta machine (or a rolling pin), not too thin: about the machine's last setting.
+7. Dust the sheets with semolina, roll them up loosely and cut into strips about 5 mm wide for tagliatelle. For lasagne, leave the sheets whole.
+8. Unroll the tagliatelle and spread them out on the board without overlapping. Leave them to dry slightly for about 20 minutes.
+
+**Method — Cook**
+9. Bring plenty of salted water to the boil and cook the pasta for about 4 minutes, draining it as soon as it floats back to the surface. Lasagne sheets only need a few seconds of blanching.
+10. Dress with ragù or the sauce of your choice.
+
+**Notes**
+- You can swap part of the semolina for other flours, such as 20–30% spelt or other cereal flours.
+- Room-temperature eggs blend into the semolina more easily.
+- To freeze: spread the tagliatelle on a tray and freeze, then transfer to a bag once frozen.
+
 ---
 
 # Desserts
