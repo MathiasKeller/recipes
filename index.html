@@ -3389,7 +3389,7 @@ function scaleQty(str, k){
   let first = null;
   str = str.replace(/(\d+(?:\.\d+)?)?([½¼¾⅓⅔⅛⅜⅝⅞])?(?=(\s*[^\d\s½¼¾⅓⅔⅛⅜⅝⅞]*))/g, (m, num, fr, after, off, whole) => {
     if (!num && !fr) return m;
-    const unit = (whole.slice(off + m.length).match(/^\s*([^\s\d)–,]*)/) || ["",""])[1].toLowerCase();
+    const unit = (whole.slice(off + m.length).replace(/^\s*–\s*[\d.½¼¾⅓⅔⅛⅜⅝⅞]+/, "").match(/^\s*([^\s\d)–,]*)/) || ["",""])[1].toLowerCase();  // look past "–60" in ranges
     if (/^(°|%|cm|mm|inch|in$|x$)/.test(unit)) return m;
     const v = (num ? parseFloat(num) : 0) + (fr ? FRAC[fr] : 0);
     const out = v * k; if (first === null) first = out;
