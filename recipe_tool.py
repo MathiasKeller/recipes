@@ -6,6 +6,12 @@ All recipes live as JSON inside index.html, in
     <script type="application/json" id="recipe-data"> ... </script>
 recipes.md is always generated from that data, never edited by hand.
 
+Markers in steps, notes and facts:
+    {60 ml|¼ cup}  a metric/original pair, shown as "60 ml / ¼ cup"
+    {150 g}        a single amount that is already metric, shown as "150 g"
+On the site, weight/volume pairs and singles in steps and notes scale with the
+amount setting. Write piece sizes, per-bowl amounts and pot sizes as plain text.
+
 Commands (run from the folder that holds index.html):
     python3 recipe_tool.py list
     python3 recipe_tool.py check
@@ -33,6 +39,7 @@ DEC_US_RE = re.compile(r"\d\.\d+\s*(US\s+)?(cups?|tbsp|tsp)\b")
 ITEM_KEYS = {"m", "o", "n", "x", "l"}
 DATA_RE = re.compile(r'(<script type="application/json" id="recipe-data">\n)(.*?)(\n</script>)', re.S)
 PAIR_RE = re.compile(r"\{([^|{}]+)\|([^{}]+)\}")
+SINGLE_RE = re.compile(r"\{([^|{}]+)\}")
 ID_RE = re.compile(r"^[a-z0-9]+(-[a-z0-9]+)*$")
 
 
@@ -56,8 +63,8 @@ def check_text(where, s, errors):
     if not isinstance(s, str) or not s.strip():
         errors.append(f"{where}: must be a non-empty string")
         return
-    if s.count("{") != len(PAIR_RE.findall(s)) or s.count("}") != s.count("{"):
-        errors.append(f"{where}: braces must only be used as {{metric|original}} pairs: {s!r}")
+    if s.count("{") != len(PAIR_RE.findall(s)) + len(SINGLE_RE.findall(s)) or s.count("}") != s.count("{"):
+        errors.append(f"{where}: braces must only be used as {{metric|original}} pairs or {{amount}} singles: {s!r}")
 
 
 def validate(recipes):
@@ -170,7 +177,8 @@ def report(recipes, strict=True):
 
 # ---------------------------------------------------------------- markdown
 def pairs(s):
-    return PAIR_RE.sub(lambda m: f"{m.group(1)} / {m.group(2)}", s)
+    s = PAIR_RE.sub(lambda m: f"{m.group(1)} / {m.group(2)}", s)
+    return SINGLE_RE.sub(lambda m: m.group(1), s)
 
 
 def to_markdown(recipes):

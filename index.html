@@ -172,6 +172,7 @@ a{color:var(--link);text-underline-offset:.18em}
 .sc-btn:disabled{opacity:.35;cursor:default}
 .sc-val{min-width:3.4rem;text-align:center;font-weight:700;font-size:1.1rem;padding:.2rem .6rem;border-radius:var(--radius-s);background:var(--surface-2);font-variant-numeric:tabular-nums}
 .sc-reset{border:0;background:none;color:var(--link);text-decoration:underline;cursor:pointer;font-size:.9rem;padding:.3rem}
+#recipe.scaled .amt{background:color-mix(in srgb,var(--cyan) 25%,transparent);border-radius:3px;padding:0 .12em;box-decoration-break:clone;-webkit-box-decoration-break:clone}
 .sc-note{font-size:.85rem;color:var(--teal);margin:0 0 .6rem}
 .star{color:#e0a000;margin-right:.3em}
 .rate-chip{display:inline-flex;align-items:baseline}
@@ -314,7 +315,7 @@ a{color:var(--link);text-underline-offset:.18em}
 
 <div class="toast" id="toast" role="status"></div>
 
-<!-- RECIPE DATA: maintained by recipe_tool.py. In steps, notes and facts, {metric|original} renders as "metric / original". -->
+<!-- RECIPE DATA: maintained by recipe_tool.py. In steps, notes and facts, {metric|original} renders as "metric / original" and {150 g} as "150 g". In steps and notes, weight/volume pairs and {single} amounts scale with the amount setting. -->
 <script type="application/json" id="recipe-data">
 [
  {
@@ -792,7 +793,7 @@ a{color:var(--link);text-underline-offset:.18em}
     "group": "Dough",
     "steps": [
      "Dissolve the yeast and sugar completely in the lukewarm water. Wait 10–15 minutes until it foams.",
-     "Add the flour {about 60 g|½ cup} at a time and knead for about 15 minutes, adjusting the last portion so the dough is soft but neither sticky nor firm. Form a smooth ball, cover with a damp towel and proof for 1 hour somewhere warm. Make the filling meanwhile."
+     "Add the flour about 60 g / ½ cup at a time and knead for about 15 minutes, adjusting the last portion so the dough is soft but neither sticky nor firm. Form a smooth ball, cover with a damp towel and proof for 1 hour somewhere warm. Make the filling meanwhile."
     ]
    },
    {
@@ -1002,14 +1003,14 @@ a{color:var(--link);text-underline-offset:.18em}
     "group": "Roll",
     "steps": [
      "Cut the stems off the cooled leaves and keep them.",
-     "Lay a leaf smooth side down on a board and put about {7.5 ml|1½ tsp} filling at the wide end.",
+     "Lay a leaf smooth side down on a board and put about 7.5 ml / 1½ tsp filling at the wide end.",
      "Fold in both sides and roll up snugly. Repeat with the remaining leaves and filling."
     ]
    },
    {
     "group": "Cook",
     "steps": [
-     "Cover the bottom of a {3.8 l|4-quart} deep pot with the herb stems, tomato or onion slices and the grape leaf stems.",
+     "Cover the bottom of a 3.8 l / 4-quart deep pot with the herb stems, tomato or onion slices and the grape leaf stems.",
      "Pack the rolled leaves in tight rows on top, leaving no gaps.",
      "Warm the stock in the microwave for 30 seconds, then stir in the tomato paste and lemon juice and dissolve the bouillon cube.",
      "Pour the liquid over the leaves and set the pot over medium-high heat.",
@@ -1808,7 +1809,7 @@ a{color:var(--link);text-underline-offset:.18em}
     "steps": [
      "Warm the {15 ml|1 tbsp} sesame oil (or butter) in a saucepan over low heat and gently fry the garlic and ginger for 1–2 minutes.",
      "Add the {22 ml|1½ tbsp} mirin and {15 ml|1 tbsp} sake and simmer for 1 minute.",
-     "Stir in the 150 g miso, {38 g|2½ tbsp} tahini, {22 ml|1½ tbsp} soy sauce and the white pepper. Whisk over low heat for 2 minutes until smooth and glossy, then take off the heat."
+     "Stir in the {150 g} miso, {38 g|2½ tbsp} tahini, {22 ml|1½ tbsp} soy sauce and the white pepper. Whisk over low heat for 2 minutes until smooth and glossy, then take off the heat."
     ]
    },
    {
@@ -1823,8 +1824,8 @@ a{color:var(--link);text-underline-offset:.18em}
     "group": "Assembly",
     "steps": [
      "Bring the {2.1 l|9 cups} stock to a gentle simmer. Cook the noodles separately according to the packet.",
-     "Put {30 ml|2 tbsp} miso tare and {15 ml|1 tbsp} of the reserved pork pan glaze into each of the 6 bowls.",
-     "Pour {360 ml|1½ cups} hot stock into each bowl and whisk hard until smooth.",
+     "Put 30 ml / 2 tbsp miso tare and 15 ml / 1 tbsp of the reserved pork pan glaze into each of the {6} bowls.",
+     "Pour 360 ml / 1½ cups hot stock into each bowl and whisk hard until smooth.",
      "Share out the noodles, then top each bowl with sliced pork, 1 or 2 halved eggs, narutomaki slices, nori or wakame, and scallions."
     ]
    }
@@ -2108,7 +2109,7 @@ a{color:var(--link);text-underline-offset:.18em}
    }
   ],
   "notes": [
-   "The {2.5 ml|½ tsp} honey adds only about 3 g of carbs to the whole dish. For a stickier glaze, use up to {5 ml|1 tsp}."
+   "The 2.5 ml / ½ tsp honey adds only about 3 g of carbs to the whole dish. For a stickier glaze, use up to {5 ml|1 tsp}."
   ],
   "rating": {
    "score": 7.5,
@@ -2420,7 +2421,7 @@ a{color:var(--link);text-underline-offset:.18em}
     "steps": [
      "Steam the salted egg yolks for 5 minutes, then mash them thoroughly with the blade of a cleaver or a fork.",
      "Hard-boil a regular egg, take out the yolk and mash it. Set aside.",
-     "Mix the butter with the 40 g icing sugar, then mix in the milk powder and custard powder.",
+     "Mix the butter with the {40 g} icing sugar, then mix in the milk powder and custard powder.",
      "Combine the butter mixture with the mashed yolks. Chill for 30 to 60 minutes.",
      "Divide into equal portions of 15–17 g each."
     ]
@@ -2428,7 +2429,7 @@ a{color:var(--link);text-underline-offset:.18em}
    {
     "group": "Dough",
     "steps": [
-     "Sprinkle the yeast into the water, add the 10 g icing sugar and mix until dissolved.",
+     "Sprinkle the yeast into the water, add the {10 g} icing sugar and mix until dissolved.",
      "Add the bao flour and baking powder and mix into a dough.",
      "Knead until elastic and shiny. Divide into 35 g portions."
     ]
@@ -3154,7 +3155,7 @@ a{color:var(--link);text-underline-offset:.18em}
      "In a large bowl, sift together the flour, granulated sugar, baking powder, baking soda, salt, pumpkin pie spice, ginger and cinnamon.",
      "In a second bowl, whisk the pumpkin purée, oil, brown sugar, eggs and vanilla.",
      "Pour the wet mixture into the dry ingredients and stir only until just combined.",
-     "Divide the batter between the cases, filling each about three-quarters full (roughly {60 ml|¼ cup} each). Bake for 20 minutes, until a toothpick pushed into the centre comes out clean.",
+     "Divide the batter between the cases, filling each about three-quarters full (roughly 60 ml / ¼ cup each). Bake for 20 minutes, until a toothpick pushed into the centre comes out clean.",
      "Leave the cupcakes in the pans for 10 minutes, then move them to a wire rack to cool completely."
     ]
    },
@@ -3214,8 +3215,18 @@ const RECIPES = JSON.parse(document.getElementById("recipe-data").textContent);
 ------------------------------------------------------------------- */
 const $ = s => document.querySelector(s);
 const esc = s => String(s).replace(/[&<>"']/g, c => ({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c]));
-const fmt = s => esc(s).replace(/\{([^|}]+)\|([^}]+)\}/g, (_, m, o) => `${m} <span class="orig">/ ${o}</span>`);
-const plain = s => String(s).replace(/\{([^|}]+)\|([^}]+)\}/g, "$1");
+// {metric|original} renders as "metric / original"; {150 g} renders as "150 g".
+// When scale is on, pairs whose metric side is a weight or volume, and all {single} markers,
+// become .amt spans that the amount scaler updates. Temperatures, lengths and sizes never scale.
+const AMT_RE = /\d\s*(g|kg|ml|l)\b/;
+const amtSpan = v => `<span class="amt" data-raw="${v}">${v}</span>`;
+const fmt = (s, scale = true) => esc(s).replace(/\{([^|{}]+)(?:\|([^{}]+))?\}/g, (_, m, o) => {
+  if (o === undefined) return scale ? amtSpan(m) : m;
+  return scale && AMT_RE.test(m) && !m.includes("°")
+    ? `${amtSpan(m)} <span class="orig">/ ${amtSpan(o)}</span>`
+    : `${m} <span class="orig">/ ${o}</span>`;
+});
+const plain = s => String(s).replace(/\{([^|{}]+)(?:\|[^{}]+)?\}/g, "$1");
 const FACT_E = {Serves:"🍽️",Makes:"🍽️",Yield:"🍽️",Prep:"🔪",Cook:"🔥",Bake:"♨️",Total:"⏱️",Pan:"🍳",Mould:"🧁",Oven:"🌡️",Equipment:"🥣"};
 const em = e => `<span class="e" aria-hidden="true">${e}</span>`;
 const countIng = r => r.ingredients.reduce((a, g) => a + g.items.length, 0);
@@ -3619,7 +3630,7 @@ function renderRecipe(r){
         <p class="r-course">${em(c.e)}${c.label}${r.cuisine ? `, ${esc(r.cuisine)}` : ""}</p>
         <h1 id="rTitle">${esc(r.title)}</h1>
         ${r.sub ? `<p class="sub">${esc(r.sub)}</p>` : ""}
-        <ul class="r-facts">${r.rating ? `<li class="f-rate"><span class="k">${STAR}My rating</span><span class="v">${fmtScore(r.rating.score)}<span class="of"> / 10</span></span></li>` : ""}${r.facts.map(([k, v]) => `<li><span class="k">${FACT_E[k] ? em(FACT_E[k]) : ""}${esc(k)}</span><span class="v"${/^(Serves|Makes|Yield)$/.test(k) ? ` data-raw="${esc(v)}"` : ""}>${fmt(v)}</span></li>`).join("")}</ul>
+        <ul class="r-facts">${r.rating ? `<li class="f-rate"><span class="k">${STAR}My rating</span><span class="v">${fmtScore(r.rating.score)}<span class="of"> / 10</span></span></li>` : ""}${r.facts.map(([k, v]) => `<li><span class="k">${FACT_E[k] ? em(FACT_E[k]) : ""}${esc(k)}</span><span class="v"${/^(Serves|Makes|Yield)$/.test(k) ? ` data-raw="${esc(v)}"` : ""}>${fmt(v, false)}</span></li>`).join("")}</ul>
         ${r.rating ? `<p class="r-verdict">${r.rating.note ? `“${esc(r.rating.note)}”` : ""}<span class="d">${r.rating.note ? "— " : ""}Rated ${longDate(r.rating.date)}</span></p>` : ""}
         <p class="r-source">Source: ${r.source.url ? `<a href="${esc(r.source.url)}" target="_blank" rel="noopener">${esc(r.source.name)}</a>` : esc(r.source.name)}${r.source.note ? `<span class="note">${esc(r.source.note)}</span>` : ""}</p>
       </header>
@@ -3642,7 +3653,7 @@ function renderRecipe(r){
           <button class="sc-btn" type="button" id="scUp" aria-label="More">+</button>
           <button class="sc-reset" type="button" id="scReset" hidden>Reset</button>
         </div>
-        <p class="sc-note" id="scNote" hidden>Ingredient amounts are scaled. Amounts mentioned in the method are still for ×1.</p>
+        <p class="sc-note" id="scNote" hidden>Amounts in the method and notes are scaled too and highlighted. Piece sizes, times and temperatures stay as written.</p>
         <p class="tip">Tick ingredients off as you add them.</p>
         ${ing}
       </section>
@@ -3670,6 +3681,7 @@ function renderRecipe(r){
     $("#scDown").disabled = k <= 0.5;
     $("#scUp").disabled = k >= 10;
     $("#scReset").hidden = $("#scNote").hidden = k === 1;
+    el.classList.toggle("scaled", k !== 1);
   };
   $("#scDown").addEventListener("click", () => { k = Math.max(0.5, k - 0.5); applyScale(); });
   $("#scUp").addEventListener("click", () => { k = Math.min(10, k + 0.5); applyScale(); });
