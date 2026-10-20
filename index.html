@@ -3465,6 +3465,7 @@ let secObserverHandler = null;
 /* ------------------------------------------------------------------
    SCALING AMOUNTS
 ------------------------------------------------------------------- */
+/* SCALING:START */
 const FRAC = {"½":.5,"¼":.25,"¾":.75,"⅓":1/3,"⅔":2/3,"⅛":.125,"⅜":.375,"⅝":.625,"⅞":.875};
 const fmtK = k => String(k).replace(".5", "½").replace(/^0½$/, "½");
 function toFraction(v){
@@ -3484,6 +3485,9 @@ function fmtMetric(v, unit){
 }
 function scaleQty(str, k){
   if (k === 1 || !str) return str;
+  // "4 × 115–170 g": scale the count only, the size of each piece stays.
+  const mult = /^(\D*?)(\d+(?:\.\d+)?|[½¼¾⅓⅔⅛⅜⅝⅞])\s*×\s*(.+)$/.exec(str);
+  if (mult){ const n = (mult[2] in FRAC ? FRAC[mult[2]] : parseFloat(mult[2])) * k; return `${mult[1]}${toFraction(n)} × ${mult[3]}`; }
   if (/\bcans?\b/.test(str)) return `${fmtK(k)} × ${str}`;              // keep can sizes intact
   const keep = [];
   str = str.replace(/\([^)]*\beach\b[^)]*\)/g, m => { keep.push(m); return `\u0000${keep.length - 1}\u0000`; });
@@ -3506,6 +3510,7 @@ function scaleQty(str, k){
     a + (first > 1 ? (w === "pinch" ? "pinches" : w + "s") : w));
   return str;
 }
+/* SCALING:END */
 
 function ingredientRow(i, lang){
   const q = i.m || i.o
