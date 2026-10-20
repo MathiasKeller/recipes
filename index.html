@@ -678,7 +678,7 @@ a{color:var(--link);text-underline-offset:.18em}
     "items": [
      {
       "m": "5 g",
-      "o": "about 1½ tsp (1.6 tsp)",
+      "o": "about 1½ tsp",
       "n": "active dry yeast",
       "x": "weight is best"
      },
@@ -2502,13 +2502,13 @@ a{color:var(--link);text-underline-offset:.18em}
      },
      {
       "m": "190 ml",
-      "o": "0.8 US cup",
+      "o": "¾ US cup + 1 tbsp",
       "n": "milk",
       "x": "full cream recommended"
      },
      {
       "m": "30 ml",
-      "o": "0.1 US cup",
+      "o": "2 tbsp",
       "n": "water"
      },
      {
@@ -2527,7 +2527,7 @@ a{color:var(--link);text-underline-offset:.18em}
      },
      {
       "m": "100 g",
-      "o": "0.44 US cup",
+      "o": "7 tbsp",
       "n": "unsalted butter"
      },
      {
@@ -3468,47 +3468,121 @@ let secObserverHandler = null;
 /* SCALING:START */
 const FRAC = {"½":.5,"¼":.25,"¾":.75,"⅓":1/3,"⅔":2/3,"⅛":.125,"⅜":.375,"⅝":.625,"⅞":.875};
 const fmtK = k => String(k).replace(".5", "½").replace(/^0½$/, "½");
+const trim = n => String(Math.round(n * 100) / 100);
+const parseNum = s => { const m = /^(\d+(?:\.\d+)?)?([½¼¾⅓⅔⅛⅜⅝⅞])?$/.exec(String(s).trim()); return m && (m[1] || m[2]) ? (m[1] ? parseFloat(m[1]) : 0) + (m[2] ? FRAC[m[2]] : 0) : NaN; };
+
+// Nearest kitchen fraction (eighths and thirds). A non-zero amount never becomes 0.
 function toFraction(v){
-  const opts = [[0,""],[.125,"⅛"],[.25,"¼"],[1/3,"⅓"],[.5,"½"],[2/3,"⅔"],[.75,"¾"],[1,""]];
+  if (!(v > 0)) return "0";
+  const opts = [[0,""],[.125,"⅛"],[.25,"¼"],[1/3,"⅓"],[.375,"⅜"],[.5,"½"],[.625,"⅝"],[2/3,"⅔"],[.75,"¾"],[.875,"⅞"],[1,""]];
   let w = Math.floor(v), f = v - w, best = opts[0];
   opts.forEach(o => { if (Math.abs(f - o[0]) < Math.abs(f - best[0])) best = o; });
   if (best[0] === 1){ w += 1; best = opts[0]; }
-  return w === 0 && best[1] ? best[1] : `${w}${best[1]}`;
+  if (w === 0 && !best[1]) return "⅛";
+  return w === 0 ? best[1] : `${w}${best[1]}`;
 }
-const trim = n => String(Math.round(n * 100) / 100);
+
+// Metric display. Never shows 0 for a non-zero amount.
 function fmtMetric(v, unit){
   if (unit === "l" || unit === "kg") return trim(v);
-  if (v >= 1000) return null;                      // handled as l / kg by the caller
+  if (v >= 1000) return null;                      // caller switches to l / kg
   if (v >= 100) return String(Math.round(v / 5) * 5);
   if (v >= 10) return String(Math.round(v));
-  return String(Math.round(v * 2) / 2).replace(/\.0$/, "");
+  if (v >= 1) return String(Math.round(v * 2) / 2);
+  return String(Math.max(0.1, Math.round(v * 10) / 10));
 }
+
+// Re-express a single US volume (given in teaspoons) with real measuring cups and spoons.
+function spoons(t, us){
+  const cupWord = c => `${us ? "US " : ""}${c > 1 ? "cups" : "cup"}`;
+  const CUPF = [0, 1/4, 1/3, 1/2, 2/3, 3/4];
+  if (t < 0.1) return "1 pinch";
+  if (t < 3 - 1e-9){
+    const q = t < 1 ? Math.max(1/8, Math.round(t * 8) / 8) : Math.round(t * 4) / 4;
+    if (q < 3) return `${toFraction(q)} tsp`;
+  }
+  const c = t / 48;
+  const plainCup = () => {               // a single cup measure within 2 %
+    let best = null;
+    for (let w = Math.floor(c); w <= Math.floor(c) + 1; w++) for (const f of CUPF){
+      const cv = w + f; if (cv <= 0) continue;
+      if (Math.abs(cv - c) / c <= 0.02 && (!best || Math.abs(cv - c) < Math.abs(best - c))) best = cv;
+    }
+    return best;
+  };
+  const tbspText = () => {               // half-tablespoon steps, else tbsp + tsp
+    const half = Math.round(t / 3 * 2) / 2;
+    if (half >= 1 && Math.abs(half * 3 - t) <= 0.26) return `${toFraction(half)} tbsp`;
+    const w = Math.floor(t / 3), rem = Math.round((t - w * 3) * 4) / 4;
+    if (rem >= 3) return `${w + 1} tbsp`;
+    return rem ? `${w} tbsp + ${toFraction(rem)} tsp` : `${w} tbsp`;
+  };
+  if (t < 12 - 1e-9) return tbspText();
+  const pc = plainCup();
+  if (pc) return `${toFraction(pc)} ${cupWord(pc)}`;
+  if (t < 24 && Math.abs(Math.round(t / 1.5) * 1.5 - t) <= 0.26) return tbspText();
+  let best = null;                        // cup measure + whole tablespoons, closest wins
+  for (let w = Math.floor(c); w >= Math.max(0, Math.floor(c) - 1); w--) for (const f of CUPF){
+    const cv = w + f; if (cv <= 0 || cv > c + 1e-9) continue;
+    const r = Math.round((c - cv) * 16); if (r > 3) continue;
+    const err = Math.abs(cv + r / 16 - c);
+    if (!best || err < best.err - 1e-9 || (Math.abs(err - best.err) < 1e-9 && r < best.r)) best = {cv, r, err};
+  }
+  if (!best){                             // just short of a cup measure: use the nearest one
+    let near = 1/4;
+    for (let w = Math.floor(c); w <= Math.floor(c) + 1; w++) for (const f of CUPF){ const cv = w + f; if (cv > 0 && Math.abs(cv - c) < Math.abs(near - c)) near = cv; }
+    return `${toFraction(near)} ${cupWord(near)}`;
+  }
+  return `${toFraction(best.cv)} ${cupWord(best.cv)}` + (best.r ? ` + ${best.r} tbsp` : "");
+}
+
+const PLURALS = [["grind","grinds"],["clove","cloves"],["slice","slices"],["head","heads"],["handful","handfuls"],
+  ["pinch","pinches"],["portion","portions"],["layer","layers"],["sheet","sheets"],["egg","eggs"],["cup","cups"],
+  ["taza","tazas"],["cucharada","cucharadas"],["cucchiaio","cucchiai"]];
+function fixPlurals(str){
+  return str.replace(/(\d+(?:\.\d+)?[½¼¾⅓⅔⅛⅜⅝⅞]?|[½¼¾⅓⅔⅛⅜⅝⅞])(\s+)((?:US\s+)?)([A-Za-zÀ-ÿ]+)(\s*\((?:cups?)\))?/g,
+    (m, n, sp, us, word, gloss) => {
+      const pair = PLURALS.find(p => p.includes(word.toLowerCase()));
+      if (!pair) return m;
+      const many = parseNum(n) > 1;
+      const w = many ? pair[1] : pair[0];
+      const g = gloss ? gloss.replace(/cups?/, many ? "cups" : "cup") : "";
+      return n + sp + us + (word[0] === word[0].toUpperCase() ? w[0].toUpperCase() + w.slice(1) : w) + g;
+    });
+}
+
 function scaleQty(str, k){
   if (k === 1 || !str) return str;
   // "4 × 115–170 g": scale the count only, the size of each piece stays.
   const mult = /^(\D*?)(\d+(?:\.\d+)?|[½¼¾⅓⅔⅛⅜⅝⅞])\s*×\s*(.+)$/.exec(str);
-  if (mult){ const n = (mult[2] in FRAC ? FRAC[mult[2]] : parseFloat(mult[2])) * k; return `${mult[1]}${toFraction(n)} × ${mult[3]}`; }
+  if (mult) return `${mult[1]}${toFraction(parseNum(mult[2]) * k)} × ${mult[3]}`;
   if (/\bcans?\b/.test(str)) return `${fmtK(k)} × ${str}`;              // keep can sizes intact
+  // A US volume such as "about ¼ cup", "2 tbsp" or "¾ US cup + 1 tbsp": re-express with real measures.
+  const lead = /^((?:about|≈|~)\s*)?(.*)$/.exec(str.trim());
+  const TERM = /^(\d+(?:\.\d+)?[½¼¾⅓⅔⅛⅜⅝⅞]?|[½¼¾⅓⅔⅛⅜⅝⅞])\s*(US\s+)?(tsp|teaspoons?|tbsp|tablespoons?|cups?)$/i;
+  const terms = lead[2].split(/\s*\+\s*/).map(s => TERM.exec(s));
+  if (terms.every(Boolean)){
+    let tsp = 0, us = false;
+    terms.forEach(t => { tsp += parseNum(t[1]) * (/^t(sp|easpoon)/i.test(t[3]) ? 1 : /^(tbsp|tablespoon)/i.test(t[3]) ? 3 : 48); us = us || !!t[2]; });
+    return (lead[1] || "") + spoons(tsp * k, us);
+  }
   const keep = [];
   str = str.replace(/\([^)]*\beach\b[^)]*\)/g, m => { keep.push(m); return `\u0000${keep.length - 1}\u0000`; });
-  let first = null;
   str = str.replace(/(\d+(?:\.\d+)?)?([½¼¾⅓⅔⅛⅜⅝⅞])?(?=(\s*[^\d\s½¼¾⅓⅔⅛⅜⅝⅞]*))/g, (m, num, fr, after, off, whole) => {
     if (!num && !fr) return m;
-    const unit = (whole.slice(off + m.length).replace(/^\s*–\s*[\d.½¼¾⅓⅔⅛⅜⅝⅞]+/, "").match(/^\s*([^\s\d)–,]*)/) || ["",""])[1].toLowerCase();  // look past "–60" in ranges
-    if (/^(°|%|cm|mm|inch|in$|x$)/.test(unit)) return m;
+    const unit = (whole.slice(off + m.length).replace(/^\s*–\s*[\d.½¼¾⅓⅔⅛⅜⅝⅞]+/, "").match(/^\s*([^\s\d)–,]*)/) || ["",""])[1].toLowerCase();
+    if (/^(°|%|cm|mm|-?inch|in$|x$|″)/.test(unit)) return m;
     const v = (num ? parseFloat(num) : 0) + (fr ? FRAC[fr] : 0);
-    const out = v * k; if (first === null) first = out;
+    const out = v * k;
     if (!/^(g|kg|ml|l)$/.test(unit)) return toFraction(out);
     const f = fmtMetric(out, unit);
     const inRange = /^\s*–/.test(whole.slice(off + m.length)) || /–\s*$/.test(whole.slice(0, off));
-    if (f === null && inRange) return String(Math.round(out / 5) * 5);  // keep both ends of a range in g / ml
-    return f === null ? trim(out / 1000) + "\u0001" : f;   // mark for unit switch
+    if (f === null && inRange) return String(Math.round(out / 5) * 5);
+    return f === null ? trim(out / 1000) + "\u0001" : f;
   });
   str = str.replace(/\u0001\s*(g|ml)\b/g, (_, u) => " " + (u === "g" ? "kg" : "l"));
   str = str.replace(/\u0000(\d+)\u0000/g, (_, i) => keep[+i]);
-  str = str.replace(/^(\S+\s+)(clove|slice|head|handful|pinch|portion|layer|egg|cup)(es|s)?\b/, (_, a, w) =>
-    a + (first > 1 ? (w === "pinch" ? "pinches" : w + "s") : w));
-  return str;
+  return fixPlurals(str);
 }
 /* SCALING:END */
 

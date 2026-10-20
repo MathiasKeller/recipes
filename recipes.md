@@ -125,7 +125,7 @@ Source: https://thewoksoflife.com/steamed-pork-buns-baozi/ (The Woks of Life, Ju
 Makes: 20 buns · Prep: 3 hrs · Cook: 20 min
 
 **Ingredients — Dough**
-- **about 1½ tsp (1.6 tsp)** (5 g) active dry yeast, weight is best
+- **about 1½ tsp** (5 g) active dry yeast, weight is best
 - **2 tsp** (8 g) granulated sugar
 - **1½ cups** (355 ml) lukewarm water
 - **about 5 cups** (580 g) all-purpose flour, plus extra for kneading and rolling
@@ -655,13 +655,13 @@ Makes: 11 · Prep: 2 hrs · Cook: 30 min · Equipment: Steamer, 10 × 10 cm baki
 - **½ US cup** (75 g) caster sugar
 - **1 tbsp** (15 ml) baking powder
 - **1 tsp** (5 g) instant active yeast
-- **0.8 US cup** (190 ml) milk, full cream recommended
-- **0.1 US cup** (30 ml) water
+- **¾ US cup + 1 tbsp** (190 ml) milk, full cream recommended
+- **2 tbsp** (30 ml) water
 - **¼ US cup** (60 ml) oil
 
 **Ingredients — Filling**
 - **4** salted egg yolks
-- **0.44 US cup** (100 g) unsalted butter
+- **7 tbsp** (100 g) unsalted butter
 - **⅓ US cup** (70 g) icing sugar
 - **3 tbsp** (40 g) custard powder
 - **4 tbsp** (60 g) milk powder

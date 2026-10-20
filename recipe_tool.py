@@ -29,6 +29,7 @@ RECIPE_KEYS = {"id", "lang", "title", "sub", "course", "tags", "cuisine", "sourc
 DATE_RE = re.compile(r"^\d{4}-\d{2}-\d{2}$")
 PHOTO_RE = re.compile(r"^photos/[a-z0-9]+(-[a-z0-9]+)*\.(jpg|jpeg|webp|png)$")
 HTML_DIR = Path(".")
+DEC_US_RE = re.compile(r"\d\.\d+\s*(US\s+)?(cups?|tbsp|tsp)\b")
 ITEM_KEYS = {"m", "o", "n", "x", "l"}
 DATA_RE = re.compile(r'(<script type="application/json" id="recipe-data">\n)(.*?)(\n</script>)', re.S)
 PAIR_RE = re.compile(r"\{([^|{}]+)\|([^{}]+)\}")
@@ -105,6 +106,8 @@ def validate(recipes):
                         errors.append(f"{loc} has an original measure (o) but no metric (m)")
                     if it.get("o") and it.get("o") == it.get("m"):
                         warnings.append(f"{loc} o equals m; leave o out when the original is already metric")
+                    if it.get("o") and DEC_US_RE.search(str(it["o"])):
+                        warnings.append(f"{loc} o uses a decimal US measure ({it['o']}); use kitchen fractions like '¾ cup + 1 tbsp'")
         meth = r.get("method")
         if not isinstance(meth, list) or not meth: errors.append(f"{w} method must be a non-empty list of groups")
         else:
