@@ -126,6 +126,7 @@ a{color:var(--link);text-underline-offset:.18em}
 .filters .lbl{color:var(--muted);font-size:.92rem;margin-right:.15rem}
 .fchip{display:inline-flex;align-items:center;gap:.4rem;height:2.4rem;padding:0 .95rem;border:1px solid var(--line);border-radius:var(--radius-s);background:var(--surface);color:var(--ink);font-size:.92rem;cursor:pointer}
 .fchip svg{display:none}
+.fchip-quick{margin-left:.6rem}
 .fchip[aria-pressed="true"]{background:var(--teal);border-color:var(--teal);color:#fff;font-weight:700}
 .fchip[aria-pressed="true"] svg{display:block}
 .reset{border:0;background:none;color:var(--link);text-decoration:underline;cursor:pointer;padding:.4rem;font-size:.92rem}
@@ -3363,7 +3364,7 @@ $("#introText").textContent = `${RECIPES.length} recipes. Search by dish or ingr
 function buildFilters(){
   const f = $("#filters");
   f.innerHTML = `<span class="lbl" id="flbl">Show only</span>` + TAGS.map(t =>
-    `<button class="fchip" type="button" data-tag="${t.id}" aria-pressed="${state.tags.has(t.id)}">
+    `<button class="fchip${t.id === "quick" ? " fchip-quick" : ""}" type="button" data-tag="${t.id}" aria-pressed="${state.tags.has(t.id)}">
       <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12.5l4.5 4.5L19 7"/></svg>${em(t.e)}${t.label}</button>`
   ).join("") + `<button class="reset" type="button" id="resetF" hidden>Clear filters</button>`;
   f.querySelectorAll(".fchip").forEach(b => b.addEventListener("click", () => {
@@ -3384,10 +3385,10 @@ function resetAll(){
 }
 
 function matches(r){
-  for (const t of state.tags){
-    if (t === "quick"){ if (!r.tags.includes("quick")) return null; }
-    else if (!r.tags.includes(t)) return null;
-  }
+  // Diet chips (veg / meat / seafood) combine with OR; "quick" must also hold when it's on.
+  const diets = [...state.tags].filter(t => t !== "quick");
+  if (diets.length && !diets.some(t => r.tags.includes(t))) return null;
+  if (state.tags.has("quick") && !r.tags.includes("quick")) return null;
   if (!state.q) return {hit:null};
   const q = norm(state.q);
   const hay = norm([r.title, r.sub || "", r.cuisine || ""].join(" "));
