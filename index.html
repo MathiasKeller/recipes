@@ -229,7 +229,11 @@ a{color:var(--link);text-underline-offset:.18em}
 .card .tags li{padding:.05rem .55rem;border:1px solid var(--line);border-radius:999px;color:var(--muted)}
 .course-head h2 .e{margin-right:.3em}
 .r-course .e,.jump .e,.fchip .e{margin-right:0}
-.tab{white-space:nowrap;max-width:none}
+.tab{white-space:nowrap;max-width:none;min-width:0;padding:0 .3rem}
+@media (max-width:30rem){.tabs .wrap{gap:.15rem;padding-right:.5rem}.tab{flex:0 1 auto;font-size:.92rem;padding:0 .4rem}.tab .e{margin-right:.2em}.clr-btn{padding:0 .3rem}}
+@media (max-width:22rem){.tab .e{display:none}}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]) .sc-note{color:var(--aqua)}}
+:root[data-theme="dark"] .sc-note{color:var(--aqua)}
 .tab .e{margin-right:.3em}
 @media (prefers-color-scheme:dark){:root:not([data-theme="light"]) .ing .box{border-color:var(--lagoon)}}
 :root[data-theme="dark"] .ing .box{border-color:var(--lagoon)}
