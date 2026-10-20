@@ -248,9 +248,14 @@ a{color:var(--link);text-underline-offset:.18em}
 .pager .next{text-align:right;grid-column:2}
 .toast{position:fixed;left:50%;bottom:calc(1.25rem + env(safe-area-inset-bottom));transform:translate(-50%,1rem);background:var(--deep);color:#fff;padding:.6rem 1rem;border-radius:999px;font-size:.92rem;opacity:0;pointer-events:none;transition:opacity .2s,transform .2s;z-index:50;max-width:calc(100% - 2rem);text-align:center}
 .toast.show{opacity:1;transform:translate(-50%,0)}
+.toast.show.has-action{pointer-events:auto}
+.toast-act{margin-left:.6rem;border:0;border-radius:999px;padding:.25rem .75rem;background:var(--aqua);color:var(--deep);font-weight:700;cursor:pointer}
+.clr-btn{margin-left:auto;flex:none;display:inline-flex;align-items:center;gap:.35rem;height:3.1rem;padding:0 .5rem;border:0;background:none;color:var(--muted);font-weight:700;font-size:.9rem;cursor:pointer}
+.clr-btn:hover{color:var(--ink)}
+@media (max-width:30rem){.clr-label{display:none}}
 [hidden]{display:none!important}
 @media print{
-  .appbar,.findbar,.filters,.tabs,.pager,.toast{display:none!important}
+  .appbar,.findbar,.filters,.tabs,.pager,.toast,.clr-btn,.scaler,.sc-note{display:none!important}
   .ing li,.steps li{break-inside:avoid}
 }
 </style>
@@ -3245,7 +3250,8 @@ function moreFigs(r){
 const courseOf = id => COURSES.find(c => c.id === id);
 const store = {
   get(k, d){ try{ const v = localStorage.getItem(k); return v === null ? d : JSON.parse(v); }catch(e){ return d; } },
-  set(k, v){ try{ localStorage.setItem(k, JSON.stringify(v)); }catch(e){} }
+  set(k, v){ try{ localStorage.setItem(k, JSON.stringify(v)); }catch(e){} },
+  del(k){ try{ localStorage.removeItem(k); }catch(e){} }
 };
 const norm = s => String(s).toLowerCase().normalize("NFD").replace(/[\u0300-\u036f]/g, "");
 const reduceMotion = () => window.matchMedia("(prefers-reduced-motion: reduce)").matches;
@@ -3268,10 +3274,18 @@ function timeLabel(r){
   return t >= 60 ? `${Math.floor(t/60)} hr${t % 60 ? " " + (t % 60) + " min" : ""}` : `${t} min`;
 }
 let toastTimer;
-function toast(msg){
+function toast(msg, action){
   const el = $("#toast");
-  el.textContent = msg; el.classList.add("show");
-  clearTimeout(toastTimer); toastTimer = setTimeout(() => el.classList.remove("show"), 2200);
+  el.textContent = msg;
+  el.classList.toggle("has-action", !!action);
+  if (action){
+    const b = document.createElement("button");
+    b.type = "button"; b.className = "toast-act"; b.textContent = action.label;
+    b.addEventListener("click", () => { clearTimeout(toastTimer); el.classList.remove("show", "has-action"); action.fn(); });
+    el.append(" ", b);
+  }
+  el.classList.add("show");
+  clearTimeout(toastTimer); toastTimer = setTimeout(() => el.classList.remove("show", "has-action"), action ? 5000 : 2200);
 }
 function scrollToEl(el, stickyEls){
   const offset = stickyEls.reduce((a, s) => a + (s ? s.offsetHeight : 0), 0) + 8;
@@ -3472,6 +3486,12 @@ $("#clearQ").addEventListener("click", () => { $("#q").value = ""; state.q = "";
    RECIPE VIEW
 ------------------------------------------------------------------- */
 let secObserverHandler = null;
+const PROGRESS_TTL_HOURS = 24;   // how long ticks and the amount setting are remembered per recipe
+function recipeSig(r){            // djb2 hash: saved progress is dropped when the recipe changes
+  let h = 5381; const str = JSON.stringify([r.ingredients, r.method]);
+  for (let i = 0; i < str.length; i++) h = ((h << 5) + h + str.charCodeAt(i)) | 0;
+  return (h >>> 0).toString(36);
+}
 
 /* ------------------------------------------------------------------
    SCALING AMOUNTS
@@ -3597,13 +3617,13 @@ function scaleQty(str, k){
 }
 /* SCALING:END */
 
-function ingredientRow(i, lang){
+function ingredientRow(i, lang, idx){
   const q = i.m || i.o
     ? (i.o
         ? `<span class="q"><span class="m" data-raw="${esc(i.o)}">${esc(i.o)}</span><span class="o" data-raw="${esc(i.m || "")}">${esc(i.m || "")}</span></span>`
         : `<span class="q"><span class="m" data-raw="${esc(i.m || "")}">${esc(i.m || "")}</span></span>`)
     : "";
-  return `<li role="checkbox" aria-checked="false" tabindex="0"><span class="box" aria-hidden="true"></span><span class="body">${q}<span class="name">${esc(i.n)}${i.x ? `<span class="x">, ${esc(i.x)}</span>` : ""}</span>${i.l ? `<span class="l" lang="${lang}">${esc(i.l)}</span>` : ""}</span></li>`;
+  return `<li role="checkbox" aria-checked="false" tabindex="0" data-i="${idx}"><span class="box" aria-hidden="true"></span><span class="body">${q}<span class="name">${esc(i.n)}${i.x ? `<span class="x">, ${esc(i.x)}</span>` : ""}</span>${i.l ? `<span class="l" lang="${lang}">${esc(i.l)}</span>` : ""}</span></li>`;
 }
 
 function renderRecipe(r){
@@ -3613,13 +3633,14 @@ function renderRecipe(r){
   const showOrig = hasOriginal(r);
   const hasNotes = r.notes && r.notes.length;
 
+  let ingIdx = 0, stepIdx = 0;
   const ing = r.ingredients.map(g => `
     ${g.group ? `<h3 class="grp">${esc(g.group)}</h3>` : ""}
-    <ul class="ing">${g.items.map(i => ingredientRow(i, r.lang || "en")).join("")}</ul>`).join("");
+    <ul class="ing">${g.items.map(i => ingredientRow(i, r.lang || "en", ingIdx++)).join("")}</ul>`).join("");
 
   const steps = r.method.map(g => `
     ${g.group ? `<h3 class="grp">${esc(g.group)}</h3>` : ""}
-    <ol class="steps" style="counter-reset:s ${countStepsBefore(r, g)}">${g.steps.map(s => `<li role="checkbox" aria-checked="false" tabindex="0">${fmt(s)}</li>`).join("")}</ol>`).join("");
+    <ol class="steps" style="counter-reset:s ${countStepsBefore(r, g)}">${g.steps.map(s => `<li role="checkbox" aria-checked="false" tabindex="0" data-i="${stepIdx++}">${fmt(s)}</li>`).join("")}</ol>`).join("");
 
   const el = $("#recipe");
   el.style.setProperty("--c", `var(--c-${r.course})`);
@@ -3640,6 +3661,10 @@ function renderRecipe(r){
         <button class="tab" type="button" data-target="sec-ing" aria-current="true">${em("🥕")}Ingredients</button>
         <button class="tab" type="button" data-target="sec-method">${em("🔥")}Method</button>
         ${hasNotes ? `<button class="tab" type="button" data-target="sec-notes">${em("💡")}Notes</button>` : ""}
+        <button class="clr-btn" type="button" id="clrBtn" aria-label="Clear ticks" hidden>
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 12a9 9 0 1 0 3-6.7"/><path d="M3 4v5h5"/></svg>
+          <span class="clr-label">Clear ticks</span>
+        </button>
       </div>
     </nav>
     <div class="wrap narrow">
@@ -3673,8 +3698,32 @@ function renderRecipe(r){
       </nav>
     </div>`;
 
+  // remembered progress (ticks + amount setting), per recipe, for PROGRESS_TTL_HOURS
+  const pKey = "rb-progress:" + r.id, sig = recipeSig(r);
+  const rows = sel => [...el.querySelectorAll(sel)];
+  const ticked = sel => rows(sel + ".done").map(li => +li.dataset.i);
+  const setTicks = (ing, steps) => {
+    rows(".ing li").forEach(li => { const on = ing.includes(+li.dataset.i); li.classList.toggle("done", on); li.setAttribute("aria-checked", String(on)); });
+    rows(".steps li").forEach(li => { const on = steps.includes(+li.dataset.i); li.classList.toggle("done", on); li.setAttribute("aria-checked", String(on)); });
+  };
+  const syncClear = () => { $("#clrBtn").hidden = !el.querySelector('[role="checkbox"].done'); };
+  const saveProgress = () => {
+    const ing = ticked(".ing li"), steps = ticked(".steps li");
+    if (!ing.length && !steps.length && k === 1) store.del(pKey);
+    else store.set(pKey, {sig, k, ing, steps, t: Date.now()});
+    syncClear();
+  };
+
   // scale amounts
   let k = 1;
+  const saved = store.get(pKey, null);
+  let restored = false;
+  if (saved && (saved.sig !== sig || !(Date.now() - saved.t < PROGRESS_TTL_HOURS * 3600e3))) store.del(pKey);
+  else if (saved){
+    if (saved.k >= 0.5 && saved.k <= 10) k = saved.k;
+    setTicks(saved.ing || [], saved.steps || []);
+    restored = (saved.ing || []).length + (saved.steps || []).length > 0;
+  }
   const applyScale = () => {
     el.querySelectorAll("[data-raw]").forEach(n => { n.textContent = scaleQty(n.dataset.raw, k); });
     $("#scVal").textContent = "×" + fmtK(k);
@@ -3683,10 +3732,18 @@ function renderRecipe(r){
     $("#scReset").hidden = $("#scNote").hidden = k === 1;
     el.classList.toggle("scaled", k !== 1);
   };
-  $("#scDown").addEventListener("click", () => { k = Math.max(0.5, k - 0.5); applyScale(); });
-  $("#scUp").addEventListener("click", () => { k = Math.min(10, k + 0.5); applyScale(); });
-  $("#scReset").addEventListener("click", () => { k = 1; applyScale(); });
+  $("#scDown").addEventListener("click", () => { k = Math.max(0.5, k - 0.5); applyScale(); saveProgress(); });
+  $("#scUp").addEventListener("click", () => { k = Math.min(10, k + 0.5); applyScale(); saveProgress(); });
+  $("#scReset").addEventListener("click", () => { k = 1; applyScale(); saveProgress(); });
   applyScale();
+  syncClear();
+  if (restored) toast("Picked up where you left off");
+
+  $("#clrBtn").addEventListener("click", () => {
+    const prev = {ing: ticked(".ing li"), steps: ticked(".steps li")};
+    setTicks([], []); saveProgress();
+    toast("Ticks cleared", {label: "Undo", fn: () => { setTicks(prev.ing, prev.steps); saveProgress(); }});
+  });
 
   el.querySelectorAll(".ph").forEach(b => b.addEventListener("click", () => { $("#lbImg").src = b.dataset.src; $("#lb").hidden = false; }));
 
@@ -3695,6 +3752,7 @@ function renderRecipe(r){
     const toggle = () => {
       const on = li.classList.toggle("done");
       li.setAttribute("aria-checked", String(on));
+      saveProgress();
     };
     li.addEventListener("click", e => { if (e.target.closest("a")) return; toggle(); });
     li.addEventListener("keydown", e => { if (e.key === " " || e.key === "Enter"){ e.preventDefault(); toggle(); } });
