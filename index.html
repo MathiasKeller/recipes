@@ -197,6 +197,8 @@ a{color:var(--link);text-underline-offset:.18em}
 .r-verdict .d{display:block;font-style:normal;font-size:.82rem;color:var(--muted);margin-top:.15rem}
 .lb{position:fixed;inset:0;z-index:80;background:rgba(0,0,0,.88);display:flex;align-items:center;justify-content:center;padding:1rem}
 .lb img{max-width:100%;max-height:100%;border-radius:var(--radius-s)}
+.lb[hidden]{display:none}
+@media print{.lb{display:none!important}}
 .lb-x{position:absolute;top:calc(.75rem + env(safe-area-inset-top));right:.75rem;width:2.6rem;height:2.6rem;border:0;border-radius:999px;background:rgba(255,255,255,.18);color:#fff;font-size:1.1rem;cursor:pointer}
 .legend{display:flex;flex-wrap:wrap;gap:.25rem 1rem;font-size:.85rem;color:var(--muted);margin:0 0 .75rem}
 .legend b{color:var(--ink)}
@@ -3783,7 +3785,7 @@ function renderRecipe(r){
     toast("Ticks cleared", {label: "Undo", fn: () => { setTicks(prev.ing, prev.steps); saveProgress(); }});
   });
 
-  el.querySelectorAll(".ph").forEach(b => b.addEventListener("click", () => { $("#lbImg").src = b.dataset.src; $("#lb").hidden = false; }));
+  el.querySelectorAll(".ph").forEach(b => b.addEventListener("click", () => openPhoto(b)));
 
   // tick off ingredients and steps
   el.querySelectorAll('[role="checkbox"]').forEach(li => {
@@ -3834,6 +3836,7 @@ function countStepsBefore(r, group){
 ------------------------------------------------------------------- */
 let current = "overview";
 function route(){
+  if ($("#lb") && !$("#lb").hidden) closePhoto(true);
   const m = /^#\/r\/([\w-]+)/.exec(location.hash);
   const r = m && RECIPES.find(x => x.id === m[1]);
   if (secObserverHandler){ window.removeEventListener("scroll", secObserverHandler); secObserverHandler = null; }
@@ -3868,8 +3871,28 @@ window.addEventListener("hashchange", route);
 buildFilters();
 renderList();
 route();
-document.body.insertAdjacentHTML("beforeend", `<div class="lb" id="lb" hidden><img id="lbImg" alt=""><button type="button" class="lb-x" aria-label="Close">✕</button></div>`);
-$("#lb").addEventListener("click", () => { $("#lb").hidden = true; });
+/* ------------------------------------------------------------------
+   PHOTO VIEWER (closes on tap, ✕, Esc and the Back button)
+------------------------------------------------------------------- */
+document.body.insertAdjacentHTML("beforeend", `<div class="lb" id="lb" role="dialog" aria-modal="true" aria-label="Photo" hidden><img id="lbImg" alt=""><button type="button" class="lb-x" id="lbClose" aria-label="Close">✕</button></div>`);
+let lbOpener = null;
+function openPhoto(btn){
+  const img = btn.querySelector("img");
+  $("#lbImg").src = btn.dataset.src; $("#lbImg").alt = img ? img.alt : "";
+  $("#lb").hidden = false; lbOpener = btn;
+  history.pushState({lb: true}, "");
+  $("#lbClose").focus();
+}
+function closePhoto(fromHistory){
+  if ($("#lb").hidden) return;
+  $("#lb").hidden = true;
+  if (!fromHistory && history.state && history.state.lb) history.back();
+  if (lbOpener && document.contains(lbOpener)) lbOpener.focus();
+  lbOpener = null;
+}
+$("#lb").addEventListener("click", () => closePhoto(false));
+document.addEventListener("keydown", e => { if (e.key === "Escape" && !$("#lb").hidden) closePhoto(false); });
+window.addEventListener("popstate", () => closePhoto(true));
 </script>
 </body>
 </html>
