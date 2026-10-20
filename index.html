@@ -171,6 +171,8 @@ a{color:var(--link);text-underline-offset:.18em}
 .sc-btn{width:2.4rem;height:2.4rem;border:2px solid var(--teal);border-radius:999px;background:var(--bg);color:var(--teal);font-size:1.3rem;font-weight:700;line-height:1;cursor:pointer;display:inline-flex;align-items:center;justify-content:center}
 .sc-btn:disabled{opacity:.35;cursor:default}
 .sc-val{min-width:3.4rem;text-align:center;font-weight:700;font-size:1.1rem;padding:.2rem .6rem;border-radius:var(--radius-s);background:var(--surface-2);font-variant-numeric:tabular-nums}
+.sc-share{margin-left:auto;display:inline-flex;align-items:center;gap:.35rem;height:2.4rem;padding:0 .8rem;border:1px solid var(--line);border-radius:999px;background:var(--bg);color:var(--ink);font-weight:700;font-size:.88rem;cursor:pointer}
+.sc-share:hover{border-color:var(--teal)}
 .sc-reset{border:0;background:none;color:var(--link);text-decoration:underline;cursor:pointer;font-size:.9rem;padding:.3rem}
 #recipe.scaled .amt{background:color-mix(in srgb,var(--cyan) 25%,transparent);border-radius:3px;padding:0 .12em;box-decoration-break:clone;-webkit-box-decoration-break:clone}
 .sc-note{font-size:.85rem;color:var(--teal);margin:0 0 .6rem}
@@ -255,7 +257,7 @@ a{color:var(--link);text-underline-offset:.18em}
 @media (max-width:30rem){.clr-label{display:none}}
 [hidden]{display:none!important}
 @media print{
-  .appbar,.findbar,.filters,.tabs,.pager,.toast,.clr-btn,.scaler,.sc-note{display:none!important}
+  .appbar,.findbar,.filters,.tabs,.pager,.toast,.clr-btn,.scaler,.sc-note,.sc-share{display:none!important}
   .ing li,.steps li{break-inside:avoid}
 }
 </style>
@@ -3617,6 +3619,36 @@ function scaleQty(str, k){
 }
 /* SCALING:END */
 
+// Plain-text ingredient list at the current amount setting, metric first (for shopping in Switzerland).
+function listText(r, k){
+  const out = [r.title + (r.sub ? " – " + r.sub : "")];
+  const y = r.facts.find(f => /^(Serves|Makes|Yield)$/.test(f[0]));
+  if (y) out.push(`${y[0]} ${scaleQty(plain(y[1]), k)}${k !== 1 ? ` (×${fmtK(k)})` : ""}`);
+  else if (k !== 1) out.push(`Amounts ×${fmtK(k)}`);
+  r.ingredients.forEach(g => {
+    out.push("");
+    if (g.group) out.push(g.group + ":");
+    g.items.forEach(i => {
+      const m = scaleQty(i.m || "", k), o = i.o ? scaleQty(i.o, k) : "";
+      // "180 ml (≈ 190 g)" + "¾ cup" → "180 ml (≈ 190 g, ¾ cup)"; otherwise "900 g (2 lb)"
+      const both = !o ? m : /\)$/.test(m) ? m.replace(/\)$/, `, ${o})`) : `${m} (${o})`;
+      const amt = m ? both + " " : (o ? o + " " : "");
+      out.push(`• ${amt}${i.n}${i.x ? ", " + i.x : ""}`);
+    });
+  });
+  out.push("", location.origin + location.pathname + "#/r/" + r.id);
+  return out.join("\n");
+}
+async function shareList(r, k){
+  const text = listText(r, k), title = r.title;
+  if (navigator.share){
+    try { await navigator.share({title, text}); return; }
+    catch (e){ if (e && e.name === "AbortError") return; }
+  }
+  try { await navigator.clipboard.writeText(text); toast("Ingredient list copied"); }
+  catch (e){ toast("Couldn't share the list"); }
+}
+
 function ingredientRow(i, lang, idx){
   const q = i.m || i.o
     ? (i.o
@@ -3677,6 +3709,10 @@ function renderRecipe(r){
           <output class="sc-val" id="scVal" aria-live="polite">×1</output>
           <button class="sc-btn" type="button" id="scUp" aria-label="More">+</button>
           <button class="sc-reset" type="button" id="scReset" hidden>Reset</button>
+          <button class="sc-share" type="button" id="shareBtn">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="18" cy="5" r="3"/><circle cx="6" cy="12" r="3"/><circle cx="18" cy="19" r="3"/><path d="M8.6 13.5l6.8 4M15.4 6.5l-6.8 4"/></svg>
+            Share list
+          </button>
         </div>
         <p class="sc-note" id="scNote" hidden>Amounts in the method and notes are scaled too and highlighted. Piece sizes, times and temperatures stay as written.</p>
         <p class="tip">Tick ingredients off as you add them.</p>
@@ -3738,6 +3774,8 @@ function renderRecipe(r){
   applyScale();
   syncClear();
   if (restored) toast("Picked up where you left off");
+
+  $("#shareBtn").addEventListener("click", () => shareList(r, k));
 
   $("#clrBtn").addEventListener("click", () => {
     const prev = {ing: ticked(".ing li"), steps: ticked(".steps li")};
