@@ -870,7 +870,7 @@ Bake: 20 min · Oven: 175 °C / 350 °F · Pan: Two 12-cup muffin pans, lined wi
 ## Cinnamon Rolls — Zimtschnecken
 Source: https://www.einfachbacken.de/rezepte/zimtschnecken-einfach-selbstgemacht (Einfach Backen, Siggi)  
 *Copied from text you supplied, because the page couldn't be fetched automatically.*  
-Makes: 10 · Prep: 30 min · Bake: 25 min · Total: 2 hr 25 min · Oven: 180 °C top/bottom heat, or 160 °C fan · Pan: Round baking dish, 30 cm diameter
+Makes: 10 · Prep: 30 min · Bake: 25 min · Total: 3 hr 40 min · Oven: 180 °C top/bottom heat, or 160 °C fan · Pan: Round baking dish, 30 cm diameter
 
 **Ingredients — Dough**
 - **270 ml** milk — *Milch*
@@ -889,14 +889,14 @@ Makes: 10 · Prep: 30 min · Bake: 25 min · Total: 2 hr 25 min · Oven: 180 °C
 - **2–3 TL (tsp)** (10–15 ml) ground cinnamon — *Zimt*
 
 **Ingredients — Glaze**
-- **70 g** cream cheese — *Frischkäse*
+- **140 g** cream cheese — *Frischkäse*
 - **1 EL (tbsp)** (15 ml) butter, soft — *weiche Butter*
 - **1 EL (tbsp)** (15 ml) icing sugar, heaped — *Puderzucker*
 
 **Method — Dough**
 1. Warm the 270 ml milk with the 60 g butter in a small pot until the butter melts.
 2. Mix the 500 g flour, 50 g sugar, vanilla sugar and salt in a bowl, then crumble in the yeast.
-3. Pour in the lukewarm milk mixture and knead with the dough hooks for 5 minutes into a smooth dough. Cover and leave to rest for 45 minutes.
+3. Pour in the lukewarm milk mixture and knead with the dough hooks for 5 minutes into a smooth dough. Cover and leave to rise for 90 minutes.
 4. Grease a round baking dish, 30 cm across.
 
 **Method — Fill and roll**
@@ -905,12 +905,13 @@ Makes: 10 · Prep: 30 min · Bake: 25 min · Total: 2 hr 25 min · Oven: 180 °C
 7. Spread the cinnamon butter thinly over the dough, leaving a border of about 1 cm. Roll up tightly from a long side.
 
 **Method — Bake**
-8. With a sharp knife, cut the roll into 10 slices and lay them in the dish. Cover and leave to rest for 30 minutes.
+8. With a sharp knife, cut the roll into 10 slices and lay them in the dish. Cover and leave to rise for 60 minutes.
 9. Heat the oven to 180 °C top/bottom heat (160 °C fan) and bake for about 25 minutes. Let the rolls cool a little.
 
 **Method — Glaze**
-10. Beat the 70 g cream cheese, soft butter and icing sugar until smooth. Spread thinly over the still-warm rolls and serve straight away.
+10. Beat the 140 g cream cheese, soft butter and icing sugar until smooth. Spread thinly over the still-warm rolls and serve straight away.
 
 **Notes**
 - No cream cheese glaze? Simply dust the baked rolls with a little icing sugar.
 - Per roll: about 417 kcal (1746 kJ), 57 g carbohydrate, 8 g protein, 17 g fat.
+- My adjustments: the original lets the dough rest for 45 and 30 minutes and uses 70 g cream cheese in the glaze. Here both rising times are doubled and the cream cheese is doubled for more topping.
