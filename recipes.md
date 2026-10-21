@@ -866,3 +866,51 @@ Bake: 20 min · Oven: 175 °C / 350 °F · Pan: Two 12-cup muffin pans, lined wi
 - Swiss shortcut for pumpkin pie spice: Lebkuchengewürz or Magenbrotgewürz from the Migros or Coop baking aisle. They also contain star anise and cardamom, so the flavour is more like a European spiced biscuit. Imported pumpkin pie spice is sold at American Food Avenue, BritShop and larger Globus food halls.
 - American brown sugar is fine white sugar coated in molasses; Swiss Rohrzucker is coarse and dry and won't give the same texture. For a close match, rub 200 g Feinkristallzucker with 1 tbsp (≈ 15 g) dark molasses or sugar beet syrup (Goldsaft / Zuckerrübensirup, near the jams at Coop and Migros) until fully blended.
 - Other brown sugar options: Vergeoise blonde or brune (larger Coop stores, French-speaking Switzerland), light muscovado (Coop Megastores, Manor Food, Alnatura, Claro), Coop Naturaplan Jacutinga sugar, or imported Domino or Tate & Lyle brown sugar from Globus, Manor or American Food Avenue.
+
+## Cinnamon Rolls — Zimtschnecken
+Source: https://www.einfachbacken.de/rezepte/zimtschnecken-einfach-selbstgemacht (Einfach Backen, Siggi)  
+*Copied from text you supplied, because the page couldn't be fetched automatically.*  
+Makes: 10 · Prep: 30 min · Bake: 25 min · Total: 2 hr 25 min · Oven: 180 °C top/bottom heat, or 160 °C fan · Pan: Round baking dish, 30 cm diameter
+
+**Ingredients — Dough**
+- **270 ml** milk — *Milch*
+- **60 g** butter — *Butter*
+- **500 g** wheat flour — *Weizenmehl*
+- **50 g** sugar — *Zucker*
+- **1 packet** vanilla sugar — *Vanillinzucker*
+- **1 pinch** salt — *Salz*
+- **½ cube** fresh yeast, or 1 packet dry yeast — *frische Hefe*
+- butter, a little, for greasing the dish — *Butter für die Form*
+- flour, a little, for rolling out — *Mehl zur Teigverarbeitung*
+
+**Ingredients — Filling**
+- **100 g** butter, soft — *weiche Butter*
+- **70 g** sugar — *Zucker*
+- **2–3 TL (tsp)** (10–15 ml) ground cinnamon — *Zimt*
+
+**Ingredients — Glaze**
+- **70 g** cream cheese — *Frischkäse*
+- **1 EL (tbsp)** (15 ml) butter, soft — *weiche Butter*
+- **1 EL (tbsp)** (15 ml) icing sugar, heaped — *Puderzucker*
+
+**Method — Dough**
+1. Warm the 270 ml milk with the 60 g butter in a small pot until the butter melts.
+2. Mix the 500 g flour, 50 g sugar, vanilla sugar and salt in a bowl, then crumble in the yeast.
+3. Pour in the lukewarm milk mixture and knead with the dough hooks for 5 minutes into a smooth dough. Cover and leave to rest for 45 minutes.
+4. Grease a round baking dish, 30 cm across.
+
+**Method — Fill and roll**
+5. Knead the dough briefly on a lightly floured surface and roll it out into a rectangle of about 40 × 30 cm.
+6. For the filling, beat the 100 g soft butter until creamy, then mix in the 70 g sugar and the cinnamon.
+7. Spread the cinnamon butter thinly over the dough, leaving a border of about 1 cm. Roll up tightly from a long side.
+
+**Method — Bake**
+8. With a sharp knife, cut the roll into 10 slices and lay them in the dish. Cover and leave to rest for 30 minutes.
+9. Heat the oven to 180 °C top/bottom heat (160 °C fan) and bake for about 25 minutes. Let the rolls cool a little.
+
+**Method — Glaze**
+10. Beat the 70 g cream cheese, soft butter and icing sugar until smooth. Spread thinly over the still-warm rolls and serve straight away.
+
+**Notes**
+- No cream cheese glaze? Simply dust the baked rolls with a little icing sugar.
+- Per roll: about 417 kcal (1746 kJ), 57 g carbohydrate, 8 g protein, 17 g fat.
