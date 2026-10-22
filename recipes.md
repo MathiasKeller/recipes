@@ -59,6 +59,35 @@ Serves: 1 egg · Prep: 5 min · Cook: 3 min · Equipment: Small fine-mesh sieve
 - Don't salt the water; it makes more wispy whites.
 - To make ahead, put the cooked eggs in an ice bath and refrigerate. Reheat in a bowl of boiling water for 20–30 seconds.
 
+## Crisp Butter Waffles — Classic baking-powder waffles with extra butter and sugar
+Source: Custom recipe  
+*Adapted from Allrecipes' Classic Waffles, with butter and sugar raised towards Preppy Kitchen's ratios for a crisper shell.*  
+Serves: 4 (6–10 waffles, depending on the iron) · Prep: 10 min · Cook: 25 min · Oven: 100 °C / 200 °F, to keep warm
+
+**Ingredients**
+- **250 g** all-purpose flour (Weissmehl)
+- **1 tsp** (5 ml (≈ 6 g)) salt
+- **12 g** baking powder
+- **50 g** sugar
+- **2** large eggs
+- **360 ml** milk, slightly warmed
+- **113 g** unsalted butter, melted and slightly cooled
+- **1 tsp** (5 ml) vanilla extract
+
+**Method**
+1. Heat the waffle iron on a medium-high or dark setting. Set the oven to 100 °C / 200 °F with a wire rack inside for keeping waffles warm.
+2. Melt the butter and let it cool for a few minutes so it doesn't scramble the eggs.
+3. In a large bowl, whisk together the flour, salt, baking powder and sugar.
+4. Warm the milk slightly (lukewarm, not hot), so it doesn't turn the melted butter into lumps. In a second bowl, beat the eggs, then whisk in the warm milk, melted butter and vanilla.
+5. Pour the wet mixture into the dry and stir just until there are no dry streaks. Small lumps are fine; overmixing makes the waffles tough.
+6. Lightly grease the hot iron, pour in the batter and close the lid. Cook until the steam has almost stopped and the waffle is deep golden, usually 4–5 minutes. The extra sugar browns faster, so check the colour on the first one.
+7. Lay finished waffles in a single layer on the rack in the oven while you cook the rest. Don't stack them, or they go soft.
+
+**Notes**
+- If the batter is too thick to spread, add a splash more milk.
+- For an even crisper, lighter waffle: swap 20 g of the flour for cornstarch (Maizena), and/or separate the eggs, whip the whites to soft peaks and fold them in at the end.
+- Leftovers freeze well and re-crisp in a toaster.
+
 ---
 
 # Starters
