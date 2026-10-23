@@ -35,6 +35,8 @@ const CASES = [
   ["1 cucharada (tbsp)", 3, "3 cucharadas (tbsp)"],
   ["1 egg", 3, "3 eggs"],
   ["1 packet", 2, "2 packets"],
+  ["1 cucchiaino raso (level tsp)", 2, "2 cucchiaini raso (level tsp)"],
+  ["½ cucchiaino (tsp)", 2, "1 cucchiaino (tsp)"],
   ["½ cube", 4, "2 cubes"],
   ["2 packets", 0.5, "1 packet"],
   ["1.25 ml (≈ 1.5 g)", 0.5, "0.6 ml (≈ 0.8 g)"],

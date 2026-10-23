@@ -946,3 +946,79 @@ Makes: 10 · Prep: 30 min · Bake: 25 min · Total: 3 hr 40 min · Oven: 180 °C
 - No cream cheese glaze? Simply dust the baked rolls with a little icing sugar.
 - Per roll: about 417 kcal (1746 kJ), 57 g carbohydrate, 8 g protein, 17 g fat.
 - My adjustments: the original lets the dough rest for 45 and 30 minutes and uses 70 g cream cheese in the glaze. Here both rising times are doubled and the cream cheese is doubled for more topping.
+
+## Neapolitan Pastiera — Pastiera napoletana
+Source: Handwritten recipe notebook  
+*Transcribed from photos of handwritten notebook pages you supplied. The tin size isn't given.*  
+Bake: 1 hr 45–50 min · Oven: 150 °C, lower-middle shelf · Pan: Pastiera tin, buttered and floured
+
+**Ingredients — Pastry**
+- **1** lemon, grated zest — *buccia grattugiata di limone*
+- **1 pinch** salt — *sale*
+- **330 g** flour, plus 6–7 g for the board — *farina*
+- **165 g** butter, soft, at room temperature — *burro morbido*
+- **130 g** granulated sugar — *zucchero semolato*
+- **1 medium** egg — *uovo*
+- **2 small** egg yolks — *tuorli*
+- baking powder, the tip of a teaspoon — *lievito*
+- **1 cucchiaino raso (level tsp)** (5 ml) orange-blossom flavouring, if diluted; 2 drops if concentrated — *aroma di fiori d'arancio*
+
+**Ingredients — Ricotta cream**
+- **350 g** sheep's-milk ricotta, thoroughly drained — *ricotta di pecora*
+- **300 g** sugar — *zucchero*
+- **3 medium** eggs — *uova*
+- **2 medium** egg yolks — *tuorli*
+- **½ cucchiaino (tsp)** (2.5 ml) cinnamon — *cannella*
+- **4 cucchiai (tbsp)** (60 ml) orange-blossom flavouring, if diluted; 1 tablespoon if concentrated — *aroma di fiori d'arancio*
+- **70 g** mixed candied peel — *canditi misti*
+
+**Ingredients — Wheat cream**
+- **300 g** cooked wheat for pastiera — *grano cotto per pastiera*
+- **200 g** fresh whole milk — *latte intero fresco*
+- **1** lemon, whole peel, in thick strips — *buccia intera di limone*
+- **1** orange, whole peel, in thick strips — *buccia intera di arancia*
+- **25 g** butter — *burro*
+
+**Method — Pastry (12–24 hours ahead)**
+1. With electric beaters or a stand mixer, beat the soft butter with the sugar, lemon zest and orange-blossom flavouring for at least 3–4 minutes, until creamy.
+2. Still beating on high speed, add the egg, then the yolks one at a time, letting each be absorbed before the next, until the cream is smooth, even and lump-free. Add a pinch of salt.
+3. Sift the 330 g flour with the baking powder, tip it in all at once and stir by hand with a spatula. It comes together in a few strokes but stays very soft.
+4. Turn out onto a board and knead only until everything is combined. It will stick to your hands a little, which is right. Work in another 6–7 g flour to firm it up and shape into a ball.
+5. Wrap tightly in cling film, flatten and chill for about 12 hours (better 24). The soft dough must firm up completely: the shell and strips have to be cut from firm, cold dough.
+
+**Method — Ricotta (12–24 hours ahead)**
+6. Drain the ricotta thoroughly, squeezing it several times in a cotton tea towel. Mix it well with the 300 g sugar, cover with cling film and leave to marinate. The ricotta must absorb the sugar completely and the sugar must dissolve into it.
+
+**Method — Wheat cream (on the day)**
+7. Peel the lemon and orange in fairly thick strips; you'll need all of the peel, so leave none on the fruit.
+8. Put the wheat, milk, butter and all the peel in a low, medium-sized pan. It shouldn't be too small: the wheat needs to lie wide and flat.
+9. Cook over the lowest heat for 25–30 minutes, stirring constantly, until velvety. Lift out the peel, scraping it clean so no cream is wasted.
+10. Blend 100 g of the wheat cream (at most 150 g: whole grains must still be in the pastiera) and stir it back into the rest. Leave to cool.
+
+**Method — Ricotta cream**
+11. Push the marinated ricotta through a fine-mesh sieve. It's tedious but essential: the cream must be smooth and silky, with no lumps at all. Press it through well so nothing is wasted.
+12. Stir in the cinnamon, then the eggs and yolks one at a time, letting each be absorbed before the next. Finally add the orange-blossom flavouring. You should have a smooth, fairly soft cream.
+13. Chop the candied peel finely.
+14. When the wheat cream is completely cold, stir it into the ricotta cream, then add the candied peel and mix well. Cover with cling film and refrigerate.
+
+**Method — Assemble**
+15. Flour the work surface well and roll the cold, firm pastry out to about 4 mm. Roll it around the rolling pin and lay it in the buttered and floured tin.
+16. Run the rolling pin over the rim to cut off the excess, trim the edge flush with a sharp knife and prick the base all over with a fork.
+17. Put the pastry shell in the fridge. If the trimmings have warmed up, put them in the freezer for 10 minutes before rolling.
+18. Roll the trimmings out to 3–4 mm and cut 6–8 strips (depending on the tin), 1–1.2 cm wide, 1.5 cm at most, with a pastry wheel or a steady knife.
+19. Pour the filling into the shell, leaving 6–7 mm below the rim.
+20. Lay 3 or 4 strips across the top about 4 cm apart, then lay the rest across them to form diamonds.
+
+**Method — Bake**
+21. Chill the assembled pastiera for a couple of hours so it doesn't puff up too much.
+22. Bake in a preheated oven at 150 °C on a lower-middle shelf for about 1 hour 45–50 minutes. Check after 1 hour: if it puffs up, open the door slightly and close it again.
+23. In the last 15 minutes it should turn caramel-amber. If it's pale, move it to an upper-middle shelf; only if it still won't colour, raise the oven to 180 °C for the last 5 minutes.
+24. Check with a skewer: the inside must come out dry.
+25. Turn off the oven and leave the pastiera inside for about 30 minutes with the door held ajar by a wooden spoon. Take it out and let it cool in the tin.
+26. Don't cut it for at least 2 days, so the flavours can settle together.
+
+**Notes**
+- Pastiera pastry should be a sturdy, not too crumbly shell. Otherwise the decorative strips break when the pastiera puffs up in the oven, and the slices crack.
+- Slow, gentle baking cooks the filling through, keeps the pastry golden rather than burnt and avoids the cooked-egg taste that high temperatures give.
+- You may have a few spoonfuls of filling left over; use them for a small tart.
+- Be patient: a perfect pastiera needs those 2 days of rest.
