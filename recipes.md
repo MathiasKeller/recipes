@@ -63,6 +63,7 @@ Serves: 1 egg · Prep: 5 min · Cook: 3 min · Equipment: Small fine-mesh sieve
 Source: Custom recipe  
 *Adapted from Allrecipes' Classic Waffles, with butter and sugar raised towards Preppy Kitchen's ratios for a crisper shell.*  
 My rating: ★ 9.5/10 (rated 2026-10-23) — “Simple but perfect. In our waffle iron, they need 8 minutes.”  
+Photo: photos/crisp-butter-waffles-1.jpg (made 2026-10-23)  
 Serves: 4 (6–10 waffles, depending on the iron) · Prep: 10 min · Cook: 25 min · Oven: 100 °C / 200 °F, to keep warm
 
 **Ingredients**
