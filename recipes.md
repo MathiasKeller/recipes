@@ -965,7 +965,7 @@ Bake: 1 hr 45–50 min · Oven: 150 °C, lower-middle shelf · Pan: Pastiera tin
 
 **Ingredients — Ricotta cream**
 - **350 g** sheep's-milk ricotta, thoroughly drained — *ricotta di pecora*
-- **300 g** sugar — *zucchero*
+- **175 g** sugar — *zucchero*
 - **3 medium** eggs — *uova*
 - **2 medium** egg yolks — *tuorli*
 - **½ cucchiaino (tsp)** (2.5 ml) cinnamon — *cannella*
@@ -987,7 +987,7 @@ Bake: 1 hr 45–50 min · Oven: 150 °C, lower-middle shelf · Pan: Pastiera tin
 5. Wrap tightly in cling film, flatten and chill for about 12 hours (better 24). The soft dough must firm up completely: the shell and strips have to be cut from firm, cold dough.
 
 **Method — Ricotta (12–24 hours ahead)**
-6. Drain the ricotta thoroughly, squeezing it several times in a cotton tea towel. Mix it well with the 300 g sugar, cover with cling film and leave to marinate. The ricotta must absorb the sugar completely and the sugar must dissolve into it.
+6. Drain the ricotta thoroughly, squeezing it several times in a cotton tea towel. Mix it well with the 175 g sugar, cover with cling film and leave to marinate. The ricotta must absorb the sugar completely and the sugar must dissolve into it.
 
 **Method — Wheat cream (on the day)**
 7. Peel the lemon and orange in fairly thick strips; you'll need all of the peel, so leave none on the fruit.
@@ -1022,3 +1022,4 @@ Bake: 1 hr 45–50 min · Oven: 150 °C, lower-middle shelf · Pan: Pastiera tin
 - Slow, gentle baking cooks the filling through, keeps the pastry golden rather than burnt and avoids the cooked-egg taste that high temperatures give.
 - You may have a few spoonfuls of filling left over; use them for a small tart.
 - Be patient: about 12 hours of rest is enough (the notebook suggests at least 2 days).
+- My adjustment: the notebook uses 300 g sugar in the ricotta cream; reduced here to 175 g.
