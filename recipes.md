@@ -623,7 +623,7 @@ Serves: 8 · Prep: 40 min · Cook: 1 hr 15 min · Equipment: Large pot, heavy po
 - **7–8 oz** (200–230 g) Japanese curry roux blocks, 1 large box, e.g. Golden Curry
 
 **Ingredients — Chicken katsu**
-- **4 (9.5 oz each)** (4 (≈ 270 g each)) boneless, skinless chicken breasts
+- **≈ 1.1 kg** boneless, skinless chicken breasts, about 8 small breasts (≈ 135 g each), each halved lengthwise: 2 halves per person
 - **2 tsp** (10 ml) salt
 - **½ tsp** (2.5 ml) black pepper, freshly ground
 - **¾ cup** (180 ml (≈ 95 g)) plain flour
