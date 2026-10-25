@@ -607,10 +607,10 @@ Serves: 8 · Prep: 40 min · Cook: 1 hr 15 min · Equipment: Large pot, heavy po
 
 **Ingredients — Curry**
 - **1½ tbsp** (22.5 ml) neutral oil
-- **2 large (1.5 lb)** (2 large (≈ 670 g)) onions, sliced or cut into wedges
+- **2 large or 4 medium (1.5 lb)** (2 large or 4 medium (≈ 670 g)) onions, sliced or cut into wedges
 - **2 cloves** garlic, minced
 - **1 tsp** (5 ml) fresh ginger, grated, with its juice
-- **4 cups** (960 ml) chicken stock, or half stock, half water, for less salt
+- **4 cups** (960 ml) water, or half chicken stock and half water, for more depth
 - **½ (6 oz)** (½ (≈ 170 g)) apple, peeled, cored and grated
 - **1 tbsp** (15 ml) ketchup
 - **15 g** Worcestershire sauce, about 1 tbsp
@@ -638,7 +638,7 @@ Serves: 8 · Prep: 40 min · Cook: 1 hr 15 min · Equipment: Large pot, heavy po
 1. Soak the cut potatoes in water for 15 minutes.
 2. Heat the 22.5 ml / 1½ tbsp oil in a large pot over medium heat. Cook the onions for about 5 minutes until translucent, or up to 10 minutes, stirring less often, until browned for more flavour.
 3. Stir in the garlic and ginger.
-4. Add the 960 ml / 4 cups stock, then the grated apple, ketchup, Worcestershire sauce, honey and soy sauce.
+4. Add the 960 ml / 4 cups water (or stock and water), then the grated apple, ketchup, Worcestershire sauce, honey and soy sauce.
 5. Add the drained potatoes and the carrots; the liquid should just cover them.
 6. Bring to the boil and skim off the foam. Cover and simmer on medium-low, stirring now and then, until a skewer slides easily through the carrots and potatoes, about 15–20 minutes.
 7. Turn off the heat. Dissolve the curry blocks 1–2 at a time in a ladleful of the liquid and stir each batch back into the pot.
