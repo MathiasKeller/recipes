@@ -600,6 +600,68 @@ Serves: 6 · Prep: 30 min · Cook: 4 min · Equipment: Pasta board, fork, cling 
 - Room-temperature eggs blend into the semolina more easily.
 - To freeze: spread the tagliatelle on a tray and freeze, then transfer to a bag once frozen.
 
+## Chicken Katsu Curry — Japanese curry with crispy breaded chicken
+Source: https://www.justonecookbook.com/wprm_print/japanese-chicken-curry (Just One Cookbook, Namiko Hirasawa Chen)  
+*Combined from Just One Cookbook's Japanese Chicken Curry and Chicken Katsu (justonecookbook.com/wprm_print/chicken-katsu), with the Worcestershire sauce and the chicken technique from geoff.garlic's Instagram reel, plus a few safety tweaks of mine (see notes). Not yet tested.*  
+Serves: 8 · Prep: 40 min · Cook: 1 hr 15 min · Equipment: Large pot, heavy pot or deep pan for frying
+
+**Ingredients — Curry**
+- **1½ tbsp** (22.5 ml) neutral oil
+- **2 large (1.5 lb)** (2 large (≈ 670 g)) onions, sliced or cut into wedges
+- **2 cloves** garlic, minced
+- **1 tsp** (5 ml) fresh ginger, grated, with its juice
+- **4 cups** (960 ml) chicken stock, or half stock, half water, for less salt
+- **½ (6 oz)** (½ (≈ 170 g)) apple, peeled, cored and grated
+- **1 tbsp** (15 ml) ketchup
+- **15 g** Worcestershire sauce, about 1 tbsp
+- **1 tbsp** (15 ml) honey
+- **1 tbsp** (15 ml) soy sauce
+- **2 (6.7 oz)** (2 (≈ 190 g)) carrots, cut into chunky wedges
+- **3 (15 oz)** (3 (≈ 430 g)) waxy potatoes, e.g. Yukon Gold, quartered
+- **7–8 oz** (200–230 g) Japanese curry roux blocks, 1 large box, e.g. Golden Curry
+
+**Ingredients — Chicken katsu**
+- **4 (9.5 oz each)** (4 (≈ 270 g each)) boneless, skinless chicken breasts
+- **2 tsp** (10 ml) salt
+- **½ tsp** (2.5 ml) black pepper, freshly ground
+- **¾ cup** (180 ml (≈ 95 g)) plain flour
+- **4 large** eggs
+- **2 tbsp** (30 ml) neutral oil, beaten into the eggs
+- **4 cups** (960 ml (≈ 200 g)) panko
+- neutral oil for frying, about 4 cm / 1½ inch deep
+
+**Ingredients — To serve**
+- cooked Japanese short-grain rice, for 8
+- fukujinzuke (red pickled vegetables), optional
+
+**Method — Curry**
+1. Soak the cut potatoes in water for 15 minutes.
+2. Heat the 22.5 ml / 1½ tbsp oil in a large pot over medium heat. Cook the onions for about 5 minutes until translucent, or up to 10 minutes, stirring less often, until browned for more flavour.
+3. Stir in the garlic and ginger.
+4. Add the 960 ml / 4 cups stock, then the grated apple, ketchup, Worcestershire sauce, honey and soy sauce.
+5. Add the drained potatoes and the carrots; the liquid should just cover them.
+6. Bring to the boil and skim off the foam. Cover and simmer on medium-low, stirring now and then, until a skewer slides easily through the carrots and potatoes, about 15–20 minutes.
+7. Turn off the heat. Dissolve the curry blocks 1–2 at a time in a ladleful of the liquid and stir each batch back into the pot.
+8. Simmer uncovered on medium-low for 5–10 minutes, stirring often so it doesn't catch, until thick. Loosen with a little water if needed.
+
+**Method — Chicken katsu (while the curry simmers)**
+9. Heat the oven to 180 °C, to keep the cooked katsu warm and to finish any piece that needs longer.
+10. Cut each chicken breast in half horizontally into two thin pieces. Cover with cling film and pound with the blunt side of a knife (or a meat mallet) to an even 1 cm. Season both sides with the salt and pepper.
+11. Heat the frying oil over medium heat to about 170 °C, usually 5–10 minutes. Without a thermometer: a wooden chopstick or spoon handle dipped in should be surrounded by steady small bubbles, and a pinch of panko should sink briefly, then rise and sizzle, browning in 10–20 seconds. No bubbles means too cool; fierce bubbling, smoke or crumbs browning instantly means too hot.
+12. Set out three bowls: flour, the eggs beaten with the 30 ml / 2 tbsp oil, and panko. Coat each piece in flour and shake off the excess, dip in egg, then press firmly into the panko.
+13. Fry one or two pieces at a time, without crowding, for 3–4 minutes in total, turning halfway, until deep golden on both sides. Cut into the thickest part of the first piece: it must be white all the way through with clear juices (74 °C if you have a thermometer). Adjust the time for the rest.
+14. Hold each piece over the pot for a few seconds to drain, then rest it on a rack in the warm oven. If a piece is golden outside but still pink inside, give it 5–10 minutes in the oven. Check the oil again between batches and skim out stray crumbs.
+
+**Method — Serve**
+15. Slice the katsu into 2.5 cm strips. Plate the rice, ladle the curry beside it, lay the katsu on top and add fukujinzuke if you like.
+
+**Notes**
+- My changes to the Just One Cookbook versions: no chicken thighs simmered in the curry (the breaded chicken goes on top instead), Worcestershire sauce added from the reel, the katsu multiplied by 4 to serve 8, chicken pounded to an even 1 cm (their range is 6 mm–1.3 cm), frying 3–4 minutes instead of 3 with a cut test, the oven to keep warm and finish, and the no-thermometer oil checks.
+- geoff.garlic's reel uses 4 onions, 600 g potatoes, 400 g carrots, 5 garlic cloves, 750 ml stock, 15 g Worcestershire and 20 g ketchup, without honey, soy sauce or ginger.
+- Easier alternative to deep-frying: shallow-fry in about 1 cm of oil in a large frying pan, 3–4 minutes per side.
+- The curry tastes even better the next day. It keeps 3 days in the fridge or 1 month in the freezer (take the potatoes out before freezing). It thickens as it cools; loosen with a little water when reheating.
+- For 4 people, set the amounts to ×½ and use a small box of curry blocks (about 92 g).
+
 ---
 
 # Desserts
