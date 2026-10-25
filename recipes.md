@@ -604,7 +604,7 @@ Serves: 6 · Prep: 30 min · Cook: 4 min · Equipment: Pasta board, fork, cling 
 Source: https://www.justonecookbook.com/wprm_print/japanese-chicken-curry (Just One Cookbook, Namiko Hirasawa Chen)  
 *Combined from Just One Cookbook's Japanese Chicken Curry and Chicken Katsu (justonecookbook.com/wprm_print/chicken-katsu), with the Worcestershire sauce and the chicken technique from geoff.garlic's Instagram reel, plus a few safety tweaks of mine (see notes). Not yet tested.*  
 My rating: ★ 10/10 (rated 2026-10-25)  
-Photo: photos/chicken-katsu-curry-2.jpg (made 2026-10-25)  
+Photo: photos/chicken-katsu-curry-3.jpg (made 2026-10-25)  
 Serves: 8 · Prep: 40 min · Cook: 1 hr 15 min · Equipment: Large pot, heavy pot or deep pan for frying
 
 **Ingredients — Curry**
