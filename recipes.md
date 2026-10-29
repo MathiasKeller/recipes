@@ -1087,3 +1087,32 @@ Bake: 1 hr 45–50 min · Oven: 150 °C, lower-middle shelf · Pan: Pastiera tin
 - You may have a few spoonfuls of filling left over; use them for a small tart.
 - Be patient: about 12 hours of rest is enough (the notebook suggests at least 2 days).
 - My adjustment: the notebook uses 300 g sugar in the ricotta cream; reduced here to 175 g.
+
+## Chocolate Brownies — Schokoladen-Brownies
+Source: Cookbook (title not given), p. 295  
+*Transcribed and translated from a photo of a cookbook page you supplied. The page doesn't say whether 160 °C is for fan or top/bottom heat.*  
+Makes: 16 · Bake: 50–60 min · Oven: 160 °C · Pan: Square tin, 20 × 20 cm
+
+**Ingredients**
+- **150 g** flour — *Mehl*
+- **75 g** cocoa powder — *Kakaopulver*
+- **130 g** brown sugar — *brauner Zucker*
+- **290 g** white sugar — *weißer Zucker*
+- **175 g** butter, melted and cooled — *Butter, geschmolzen, abgekühlt*
+- **1 TL (tsp)** (5 ml) vanilla extract — *Vanilleextrakt*
+- **3** eggs — *Eier*
+- **125 g** dark chocolate, chopped — *dunkle Schokolade, zerkleinert*
+
+**Method**
+1. In a large bowl, stir the flour, cocoa, both sugars, melted butter, vanilla and eggs into a smooth batter.
+2. Stir in the chopped chocolate.
+3. Preheat the oven to 160 °C.
+4. Lightly grease a 20 × 20 cm square tin and line it with baking paper.
+5. Pour the batter into the tin.
+6. Bake for about 50–60 minutes, until set. Take it out as soon as it feels firm when pressed with a finger.
+7. Leave to cool in the tin for 5 minutes, then cut into squares and eat warm, or let it cool completely in the tin.
+
+**Notes**
+- If you're not serving them warm, let the brownie cool completely in the tin, then lift it out and cut it. It firms up on the outside as it cools, but the centre stays soft and moist.
+- Each sugar does its own job: the white sugar adds sweetness and gives a smooth, crisp top, while the brown sugar keeps the centre moist and chewy.
+- Stored airtight, the brownies keep for up to 1 week.
