@@ -1116,3 +1116,30 @@ Makes: 16 · Bake: 50–60 min · Oven: 160 °C · Pan: Square tin, 20 × 20 cm
 - If you're not serving them warm, let the brownie cool completely in the tin, then lift it out and cut it. It firms up on the outside as it cools, but the centre stays soft and moist.
 - Each sugar does its own job: the white sugar adds sweetness and gives a smooth, crisp top, while the brown sugar keeps the centre moist and chewy.
 - Stored airtight, the brownies keep for up to 1 week.
+
+## Banana Bread
+Source: https://www.simplyrecipes.com/recipes/banana_bread/ (Simply Recipes, Elise Bauer)  
+*Copied from text you supplied, because the page couldn't be fetched automatically.*  
+Serves: 8–10 · Yield: 1 loaf · Prep: 10 min · Cook: 1 hr · Total: 1 hr 10 min · Oven: 175 °C / 350 °F · Pan: Loaf pan, 20 × 10 cm / 8 × 4 inch
+
+**Ingredients**
+- **2–3 medium** very ripe bananas, peeled, 17.5–20 cm / 7–7⅞ inch long; about 300–360 ml / 1¼–1½ cups mashed
+- **⅓ cup** (76 g) butter, unsalted or salted, melted
+- **½ tsp** (2.5 ml) baking soda, not baking powder
+- **1 pinch** salt
+- **¾ cup** (150 g) sugar, 120 ml / ½ cup for less sweet, 240 ml / 1 cup for sweeter
+- **1 large** egg, beaten
+- **1 tsp** (5 ml) vanilla extract
+- **1½ cups** (205 g) plain (all-purpose) flour
+
+**Method**
+1. Heat the oven to 175 °C / 350 °F and butter a 20 × 10 cm / 8 × 4 inch loaf pan.
+2. In a mixing bowl, mash the bananas with a fork until completely smooth, then stir in the melted butter.
+3. Mix in the baking soda and salt, then stir in the sugar, beaten egg and vanilla. Finally mix in the flour.
+4. Pour the batter into the pan and bake for 55–65 minutes, until a toothpick or skewer pushed into the centre comes out clean. A few dry crumbs are fine; streaks of wet batter are not. If the outside is browned but the centre is still wet, tent loosely with foil and keep baking until done.
+5. Let it cool in the pan for a few minutes, then turn it out and cool completely before slicing. A bread knife gives cleaner, less crumbly slices.
+
+**Notes**
+- No mixer needed; you can mix everything in one bowl.
+- In a 21 × 11 cm / 8½ × 4½ inch pan, bake for 47–57 minutes.
+- Wrapped well, it keeps 4 days at room temperature. For longer, refrigerate up to 5 days, or freeze.
