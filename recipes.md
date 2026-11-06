@@ -1143,3 +1143,37 @@ Serves: 8–10 · Yield: 1 loaf · Prep: 10 min · Cook: 1 hr · Total: 1 hr 10 
 - No mixer needed; you can mix everything in one bowl.
 - In a 21 × 11 cm / 8½ × 4½ inch pan, bake for 47–57 minutes.
 - Wrapped well, it keeps 4 days at room temperature. For longer, refrigerate up to 5 days, or freeze.
+
+## Greek Yogurt Banana Bread — Just a Taste version
+Source: https://www.justataste.com/greek-yogurt-banana-bread-recipe/ (Just a Taste, Kelly Senyei)  
+Serves: 8 · Prep: 15 min · Cook: 1 hr · Total: 1 hr 15 min · Oven: 175 °C / 350 °F · Pan: Loaf pan, 22.5 cm / 9 inch
+
+**Ingredients — Dry**
+- **2 cups** (480 ml (≈ 250 g)) plain (all-purpose) flour
+- **½ cup** (120 ml (≈ 100 g)) sugar
+- **¼ cup** (60 ml (≈ 55 g)) light brown sugar, packed
+- **1 tsp** (5 ml) baking soda
+- **½ tsp** (2.5 ml) salt
+
+**Ingredients — Wet**
+- **3** very ripe bananas, with dark speckles, mashed well; about 360 ml / 1½ cups
+- **¼ cup** (60 ml) plain Greek yogurt, nonfat or regular
+- **2 large** eggs
+- **¼ cup** (60 ml) vegetable oil
+- **2½ tsp** (12.5 ml) vanilla extract
+
+**Ingredients — Mix-ins**
+- **1 cup** (240 ml (≈ 120 g)) chopped walnuts, chopped pecans or chocolate chips
+
+**Method**
+1. Heat the oven to 175 °C / 350 °F. Line a 22.5 cm / 9 inch loaf pan with baking paper, leaving it overhanging the two long sides, and grease the paper with cooking spray.
+2. In a large bowl, whisk the flour, both sugars, baking soda and salt.
+3. In a medium bowl, whisk the mashed bananas, eggs, Greek yogurt, oil and vanilla.
+4. Stir the wet mixture into the dry until just combined. Fold in the nuts or chocolate chips and pour into the pan.
+5. Bake for 50–60 minutes, until a toothpick pushed into the centre comes out clean.
+6. Cool completely in the pan, then lift out by the paper overhang, slice and serve.
+
+**Notes**
+- Mix-ins: nuts, chocolate chips or both. The author also suggests fresh blueberries or raspberries.
+- Butter or olive oil can replace the vegetable oil (author's reply to a reader).
+- A commenter reports it freezes well: freeze individual slices and thaw as needed.
