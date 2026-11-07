@@ -664,6 +664,40 @@ Serves: 8 · Prep: 40 min · Cook: 1 hr 15 min · Equipment: Large pot, heavy po
 - The curry tastes even better the next day. It keeps 3 days in the fridge or 1 month in the freezer (take the potatoes out before freezing). It thickens as it cools; loosen with a little water when reheating.
 - For 4 people, set the amounts to ×½ and use a small box of curry blocks (about 92 g).
 
+## Sweet Potato Taco Shells with Beef
+Source: Social media post  
+*Copied from a screenshot you supplied. The post gives no servings, spice amounts or guacamole recipe.*  
+Makes: 6 shells · Bake: 15–18 min · Oven: 200 °C / 400 °F · Equipment: Baking paper, muffin tin
+
+**Ingredients — Shells**
+- **1 large** sweet potato, grated
+- **½ cup** (120 ml (≈ 55 g)) mozzarella, grated
+- **1** egg
+- Spices of choice, e.g. garlic, paprika, salt and pepper; no quantity given
+
+**Ingredients — Meat filling**
+- **200 g** lean minced beef
+- **½ cup** (120 ml) tomato sauce, infused with onion and garlic
+- **1 tbsp** (15 ml) taco seasoning
+
+**Ingredients — Toppings**
+- lettuce, shredded
+- red onion
+- fresh coriander (cilantro)
+- homemade guacamole
+- lime wedges
+
+**Method — Shells**
+1. Heat the oven to 200 °C / 400 °F. Mix the grated sweet potato, mozzarella, egg and spices.
+2. Spread the mixture into 6 thin circles on baking paper and bake for 15–18 minutes, until the edges are crisp.
+3. While still warm, gently press each circle between the cups of an upside-down muffin tin to shape it into a taco shell. Leave to cool.
+
+**Method — Meat**
+4. Brown the minced beef, then add the taco seasoning and the garlic-and-onion tomato sauce. Simmer until thick.
+
+**Method — Assemble**
+5. Fill the shells with lettuce, red onion, the taco meat, coriander and a big spoonful of guacamole. Finish with a squeeze of lime.
+
 ---
 
 # Desserts
