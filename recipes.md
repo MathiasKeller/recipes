@@ -698,6 +698,9 @@ Makes: 6 shells · Bake: 15–18 min · Oven: 200 °C / 400 °F · Equipment: Ba
 **Method — Assemble**
 5. Fill the shells with lettuce, red onion, the taco meat, coriander and a big spoonful of guacamole. Finish with a squeeze of lime.
 
+**Notes**
+- My tip, not from the post: squeeze the grated sweet potato in a clean tea towel before mixing. With less water, the shells crisp up better and hold their shape on the muffin tin.
+
 ---
 
 # Desserts
