@@ -701,6 +701,50 @@ Makes: 6 shells · Bake: 15–18 min · Oven: 200 °C / 400 °F · Equipment: Ba
 **Notes**
 - My tip, not from the post: squeeze the grated sweet potato in a clean tea towel before mixing. With less water, the shells crisp up better and hold their shape on the muffin tin.
 
+## Spanish Vegetable Paella
+Source: https://spainonafork.com/spanish-vegetable-paella-using-basic-pantry-staples/ (Spain on a Fork, Albert Bevia)  
+*With my tweaks: browned mushrooms, bomba rice and ground saffron (marked as my additions; see notes).*  
+Serves: 2 · Prep: 10 min · Cook: 35 min · Equipment: Paella pan, or a large non-stick frying pan; mortar and pestle
+
+**Ingredients — Paella**
+- **¼ cup** (60 ml) extra-virgin olive oil
+- **150 g** mushrooms, diced; brown or oyster (my addition, no quantity in the original)
+- **4 cloves** garlic, finely minced
+- **½** onion, finely diced
+- **½** red pepper, roughly diced
+- **20 stalks** fresh asparagus, cut into 2.5 cm / 1 inch pieces
+- **15 oz can** (425 g can) artichoke hearts, drained and patted dry
+- **1 cup** (240 ml (≈ 170 g)) precooked lima (butter) beans, canned or frozen
+- **½ cup** (120 ml) canned tomato sauce
+- **1 cup** (240 ml (≈ 200 g)) bomba or Calasparra rice, my swap; the original uses round (medium-grain) rice
+- **2½ cups** (600 ml) vegetable stock, hot, plus a little extra in reserve
+- **½ tsp** (2.5 ml) saffron threads
+- **1 tsp** (5 ml) sweet smoked Spanish paprika
+- Sea salt and black pepper, plus a pinch of coarse salt for grinding the saffron
+
+**Ingredients — To serve**
+- lemon wedges
+
+**Method**
+1. My addition: grind the saffron to a powder in a mortar with a pinch of coarse salt, then dissolve it in a splash of the warm stock.
+2. Heat the pan over medium-high heat, add the 60 ml / ¼ cup oil and, after about 1 minute, season the oil with sea salt.
+3. My addition: add the mushrooms and fry until deeply browned.
+4. Add the red pepper, asparagus and artichokes and stir for about 3 minutes. Add the onion and stir for about 2 minutes, until translucent.
+5. Push the vegetables aside, add the garlic and stir for about 30 seconds. Add the paprika, then straight away the tomato sauce, beans, salt and pepper, and mix well.
+6. About 1 minute later, pour in the 600 ml / 2½ cups stock and the saffron liquid and stir gently. Once it boils, let it boil for about 1 minute more.
+7. Add the rice and spread it evenly with one gentle stir. Don't stir it again from now on.
+8. 8 minutes after adding the rice, lower the heat to medium-low and simmer for 4–5 minutes, until there is virtually no stock left. If the rice is still firm when the stock is gone, sprinkle over a little extra hot stock (bomba absorbs more liquid than round rice).
+9. Raise the heat to medium-high for 60–90 seconds to form the socarrat, the caramelised layer of rice on the bottom.
+10. Take off the heat, cover with a tea towel and rest for 5 minutes. Serve with lemon wedges.
+
+**Notes**
+- My changes to the original: browned mushrooms for extra savoury depth, bomba or Calasparra rice instead of round rice (it holds its shape and absorbs more flavour), and the saffron ground and dissolved for more even colour and flavour.
+- For a group, the author suggests about ½ cup of rice per person and tripling the other ingredients; use the amounts scaler (×3 for 6).
+- My tip: the rice should lie in a thin layer. For more than about 6 people, use two pans, or one very large pan over two burners, turning it now and then. One overloaded pan cooks unevenly and won't form a socarrat.
+- My tip: shop-bought stock varies a lot in saltiness, so taste it before seasoning.
+- The author calls saffron one of the most important ingredients here.
+- Frozen artichoke hearts also work instead of canned (a reader's tip the author agreed with).
+
 ---
 
 # Desserts
