@@ -701,43 +701,6 @@ Makes: 6 shells · Bake: 15–18 min · Oven: 200 °C / 400 °F · Equipment: Ba
 **Notes**
 - My tip, not from the post: squeeze the grated sweet potato in a clean tea towel before mixing. With less water, the shells crisp up better and hold their shape on the muffin tin.
 
-## Vegan Paella — Paella vegana
-Source: https://danzadefogones.com/paella-vegana/ (Danza de Fogones)  
-Serves: 4 · Prep: 5 min · Cook: 40 min · Total: 45 min · Equipment: Paella pan, or a frying pan or pot
-
-**Ingredients**
-- **2 cucharadas (tbsp)** (30 ml) extra-virgin olive oil — *aceite de oliva virgen extra*
-- **4 cloves** garlic — *ajo*
-- **½** onion — *cebolla*
-- **½** red pepper — *pimiento rojo*
-- **½** green pepper — *pimiento verde*
-- **2** tomatoes — *tomates*
-- **1 taza (cup)** (120 g) frozen artichoke hearts — *corazones de alcachofa congelados*
-- **½ taza (cup)** (75 g) frozen green beans — *judías verdes congeladas*
-- **½ taza (cup)** (65 g) frozen peas — *guisantes congelados*
-- **1¼ tazas (cups)** (240 g) basmati rice — *arroz basmati*
-- **4 tazas (cups)** (1 l) vegetable stock, hot — *caldo de verduras*
-- **2 cucharaditas (tsp)** (10 ml) ground turmeric — *cúrcuma*
-- **1 cucharadita (tsp)** (5 ml) sweet paprika — *pimentón dulce*
-- Salt and black pepper, to taste (optional) — *sal y pimienta negra*
-
-**Method**
-1. Chop the garlic, onion and both peppers. Heat the 30 ml oil and fry them over medium heat until golden.
-2. Add the tomatoes and cook for about 5–10 minutes.
-3. Stir in the artichokes, green beans and peas and cook for about 5 minutes more.
-4. Add the rice and cook until its edges turn translucent. Pour in the hot 1 l stock, add the turmeric and paprika, and season to taste.
-5. Cook over medium to medium-high heat for 15–20 minutes, until the rice is done, without stirring. Add more stock along the way if it needs more liquid.
-6. Cover and leave to rest for at least 5–10 minutes before serving.
-
-**Notes**
-- Homemade vegetable stock is best; the author avoids shop-bought stock and stock cubes because of their additives. Water also works.
-- For a taste of the sea, add wakame seaweed: soak it in hot water and use the soaking water as stock if you have none.
-- Fresh vegetables are ideal, but frozen ones are practical.
-- The author uses basmati for its lower glycaemic index; brown rice would be even better.
-- Turmeric gives the colour instead of saffron or artificial colouring.
-- Don't stir once the rice is in, unless it sticks or cooks unevenly. For a socarrat (crisp base), turn up the heat at the end, though the page warns this can produce benzopyrene, a toxic substance.
-- Serve with lemon wedges to squeeze over the rice on the plate.
-
 ---
 
 # Desserts
